@@ -1,0 +1,154 @@
+@media only screen and (min-width: 520px) {
+	
+	#sponsors {
+		section {
+			&.official-hotel {
+				@include grid-column($columns: 3, $offset: 3);
+			}
+			&.co-organizer {
+				@include grid-column($columns: 3);
+			}
+		}
+	}
+		
+	.contacts-list {
+		text-align: center;
+		li {
+			text-align: left;
+			display: inline-block;
+		}
+	}
+	
+	.entry-list {
+		&.speakers,
+		&.team,
+		&.sections {
+			@include block-grid(2, 15px, true);
+		}
+	}
+
+	#site-foot {
+		.discover,
+		.follow {
+			@include grid-column($columns: 6);
+		}
+		.newsletter {
+			@include grid-column($columns: 12);
+		}
+		.credits {
+			.copyright {
+				text-align: center;
+				dd {
+					display: inline-block;
+					&:after {
+						content: '•';
+						margin: 0 10px;
+					}
+					&:last-child:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	
+	#site-head {
+		.toggle-menu {
+			display: none;
+		}
+	}
+	
+	#sponsors {
+		section {
+			&.official-hotel {
+				@include grid-column($columns: 2, $offset: 4);
+			}
+			&.co-organizer {
+				@include grid-column($columns: 2);
+			}
+		}
+	}
+	
+	.speakers-call {
+		@include grid-column($columns: 6);
+	}
+
+	.mod {
+		.mod-prime-title {
+			font-size: emCalc(36px);
+			@include grid-column($columns: 10, $center: true);
+		}
+		.mod-description {
+			font-size: emCalc(24px);
+			@include grid-column($columns: 10, $center: true);
+		}
+	}
+	
+	#site-title {
+		@include grid-column($columns: 3);
+		font-size: emCalc(66px);
+		line-height: 0.8;
+		&:before {
+			top: -155px;
+			left: -144px;
+			font-size: 260px;
+		}
+		em {
+			display: block;
+		}
+	}
+	
+	#prime-nav {
+		display: block;
+		@include grid-column($columns: 9);
+		display: block;
+		background: none;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: emCalc(24px);
+		ul {
+			margin: 0;
+			li {
+				@include grid-column($columns: 4);
+				margin-top: 2px;
+				margin-bottom: 10px;
+				border-bottom: 0;
+				a {
+					color: $base-color;
+					line-height: 1.2;
+					padding: 0;
+					small {
+						line-height: 1.2;
+					}
+				}
+			}
+		}
+	}
+	
+	.entry {
+		.entry-prose {
+			@include grid-column($columns: 10, $center: true);
+		}
+	}
+	
+	.entry-list {
+		&.speakers,
+		&.team,
+		&.sections {
+			@include block-grid(4, 15px, true);
+		}
+	}
+		
+	#site-foot {
+		.discover,
+		.follow,
+		.newsletter {
+			@include grid-column($columns: 4);
+		}
+	}
+	
+}
