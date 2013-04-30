@@ -2,3 +2,5 @@ node_modules/*
 package/*
 .sass-cache/*
 public/.DS_Store
+.DS_Store
+public/css/*
