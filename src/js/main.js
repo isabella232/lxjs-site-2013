@@ -21,19 +21,11 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 
-<<<<<<< HEAD
 		if(parseInt($('#brand-logo').css('font-size')) === 0 && $('#prime-nav').css('display') != 'block') {
 			$('#prime-nav').toggle();
 		}
 
 		if(parseInt($('#brand-logo').css('font-size')) !== 0 && $('#prime-nav').css('display') == 'block') {
-=======
-		if(parseInt($('#brand-logo').css('font-size')) == 0 && $('#prime-nav').css('display') != 'block') {
-			$('#prime-nav').toggle();
-		}
-
-		if(parseInt($('#brand-logo').css('font-size')) != 0 && $('#prime-nav').css('display') == 'block') {
->>>>>>> changed comparison to font-size
 			$('#prime-nav').toggle();
 			$('#site-head .toggle-menu').removeClass('active');
 		}
