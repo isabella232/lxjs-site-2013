@@ -49,8 +49,8 @@ module.exports = function(grunt) {
   				"public/register.html": "src/register.html",
   				"public/team-and-contacts.html": "src/team-and-contacts.html",
   				"public/workshops.html": "src/workshops.html",
-  				"public/speakers/index.html": "src/speakers/index.html"
-
+  				"public/speakers/index.html": "src/speakers/index.html",
+				"public/speakers/mike-brevoort.html": "src/speakers/mike-brevoort.html"
   			}
   		},
 
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
   				"public/team-and-contacts.html": "src/team-and-contacts.html",
   				"public/workshops.html": "src/workshops.html",
     			"public/speakers/index.html": "src/speakers/index.html",
-				
+				"public/speakers/mike-brevoort.html": "src/speakers/mike-brevoort.html"
   			}
   		}
   	},

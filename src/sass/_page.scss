@@ -102,7 +102,6 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 25px 0;
 	.toggle-menu {
 		@include grid-column($columns: 2);
-		display: block;
 		padding: 0 !important;
 		font-size: emCalc(32px);
 		display: block;
@@ -115,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 			@extend .icon;
 			content: '\e006';
 			position: relative;
+			right: -1px;
 			top: -15px;
 			margin-bottom: -30px;
 			float: right;
@@ -124,6 +124,12 @@ h1, h2, h3, h4, h5, h6 {
 		&.active:before {
 			background: $base-color;
 			color: #fff;
+		}
+		&.active:hover {
+			@include opacity(1);
+		}
+		span {
+			@extend .visually-hidden;
 		}
 	}
 }
@@ -185,6 +191,9 @@ h1, h2, h3, h4, h5, h6 {
 				text-transform: uppercase;
 				font-weight: $body-font-regular;
 				color: tint($base-color, 50%);
+			}
+			span {
+				@extend .visually-hidden;
 			}
 		}
 	}
@@ -275,6 +284,11 @@ h1, h2, h3, h4, h5, h6 {
 				&:after {
 					background-color: #fff;
 				}
+				small,
+				a {
+					color: tint($primary-color, 50%);
+					font-size: inherit;
+				}
 			}
 			.mod-description {
 				color: tint($primary-color, 80%);
@@ -285,6 +299,9 @@ h1, h2, h3, h4, h5, h6 {
 			text-align: center;
 			margin-top: 30px;
 			margin-bottom: 0;
+			dt {
+				@extend .visually-hidden;
+			}
 			dd {
 				display: inline-block;
 				font-size: emCalc(24px);
@@ -328,11 +345,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #sponsors {
 	section {
-		&.official-hotel {
-			@include grid-column($columns: 5, $offset: 1);
+		margin-bottom: 20px;
+		&.synchronous {
+			@include grid-column($columns: 6);
 		}
 		&.co-organizer {
-			@include grid-column($columns: 5);
+			@include grid-column($columns: 6);
+		}
+		&.official-hotel {
+			@include grid-column($columns: 6);
 		}
 		> h1 {
 			font-size: emCalc(14px);
@@ -403,85 +424,8 @@ h1, h2, h3, h4, h5, h6 {
 			font-size: 32px;
 			color: tint($primary-color, 50%);
 		}
-	}
-}
-
-.entry-list {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	overflow: hidden;
-	.entry-prime-title {
-		font-size: emCalc(24px);
-		margin: 0;
-	}
-	&.speakers,
-	&.team,
-	&.sections {
-		@include block-grid(1, 15px, true);
-		margin: 0 !important;
-		text-align: center;
-		> li {
-			clear: none !important;
-		}
-		.entry-cover-wrapper {
-			position: relative;
-			display: inline-block;
-			margin-bottom: 10px;
-			background: #fff;
-			padding: 10px;
-			@include border-radius(50%);
-			border: 10px solid tint($primary-color, 85%);
-			max-width: 220px;
-			img {
-				@include border-radius(50%);
-				display: block;
-				background: $primary-color;
-			}
-			&.illu:before {
-				@extend .icon;
-				font-size: 80px;
-				color: #fff;
-				position: absolute;
-				top: 50%;
-				left: 0;
-				margin: -40px 0 0 0;
-				z-index: 10;
-				width: 100%;
-				text-align: center;
-			}
-			&.workshops:before { content: "\e009"; }
-			&.conference:before { content: "\e00a"; }
-			&.fringe:before { content: "\e00b"; }
-			&.guide:before { content: "\e00c"; }
-			&.user:before { content: "\e019"; }
-			&.tba:before {
-				content: "?";
-				font-family: $body-font-family;
-				font-weight: $body-font-bold;
-			}
-		}
-	}
-	.entry-meta {
-		dd {
-			margin-bottom: 0;
-		}
-		.subtitle {
-			text-transform: uppercase;
-			font-size: emCalc(14px);
-			color: tint($base-color, 30%);
-			line-height: 1.2;
-		}
-		.twitter {
-			margin-top: 5px;
-			a:before {
-				@extend .icon;
-				font-size: 16px;
-				content: "\e011";
-				margin-right: 4px;
-				vertical-align: middle;
-				color: tint($primary-color, 50%);
-			}
+		span {
+			@extend .visually-hidden;
 		}
 	}
 }
@@ -524,9 +468,104 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.entry-cover-wrapper {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 10px;
+	background: #fff;
+	padding: 10px;
+	@include border-radius(50%);
+	border: 10px solid tint($primary-color, 85%);
+	max-width: 220px;
+	img {
+		@include border-radius(50%);
+		display: block;
+		background: $primary-color;
+	}
+	&.illu:before {
+		@extend .icon;
+		font-size: 80px;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin: -40px 0 0 0;
+		z-index: 10;
+		width: 100%;
+		text-align: center;
+	}
+	&.workshops:before { content: "\e009"; }
+	&.conference:before { content: "\e00a"; }
+	&.fringe:before { content: "\e00b"; }
+	&.guide:before { content: "\e00c"; }
+	&.user:before { content: "\e019"; }
+	&.tba:before {
+		content: "?";
+		font-family: $body-font-family;
+		font-weight: $body-font-bold;
+	}
+}
+
+.entry-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+	.entry-prime-title {
+		font-size: emCalc(24px);
+		margin: 0;
+	}
+	&.speakers,
+	&.team,
+	&.sections {
+		@include block-grid(1, 15px, true);
+		margin: 0 !important;
+		text-align: center;
+		> li {
+			clear: none !important;
+		}
+		.entry-cover-wrapper {
+			
+		}
+	}
+	.entry-meta {
+		dt {
+			@extend .visually-hidden;
+		}
+		dd {
+			margin-bottom: 0;
+		}
+		.subtitle {
+			text-transform: uppercase;
+			font-size: emCalc(14px);
+			color: tint($base-color, 30%);
+			line-height: 1.2;
+		}
+		.twitter {
+			margin-top: 5px;
+			a:before {
+				@extend .icon;
+				font-size: 16px;
+				content: "\e011";
+				margin-right: 4px;
+				vertical-align: middle;
+				color: tint($primary-color, 50%);
+			}
+		}
+	}
+}
+
 .entry {
 	.entry-prose {
 		@include grid-column($columns: 12);
+		.entry-cover-wrapper {
+			margin: 0 auto 20px auto;
+			clear: both;
+			display: block;
+		}
+		> *:last-child {
+			margin-bottom: 0;
+		}
 	}
 	> .mod-body {
 		padding-bottom: 0;
@@ -545,6 +584,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #team {
+	.mod-head {
+		@extend .visually-hidden;
+	}
 	.mod-body {
 		padding-bottom: 50px;
 	}	
@@ -618,6 +660,9 @@ h1, h2, h3, h4, h5, h6 {
 				font-size: 32px;
 				color: tint($primary-color, 50%);
 			}
+			span {
+				@extend .visually-hidden;
+			}
 		}
 	}
 	form {
@@ -638,6 +683,9 @@ h1, h2, h3, h4, h5, h6 {
 			}
 			&.name:before { content: '\e019'; }
 			&.email:before { content: '\e004'; }
+			span {
+				@extend .visually-hidden;
+			}
 		}
 		input[type="text"] {
 			@include grid-column($columns: 10);
@@ -668,6 +716,7 @@ h1, h2, h3, h4, h5, h6 {
 			padding: 0 15px;
 			@include border-radius(4px);
 			width: 100%;
+			@include box-shadow(none);
 		}
 	}
 	.credits {

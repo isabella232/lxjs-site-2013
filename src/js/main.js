@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$('.toggle-menu').click(function(evt){
+	$('#site-head .toggle-menu').click(function(evt){
 		
 		$(this).toggleClass('active');
 		$('#prime-nav').toggle();

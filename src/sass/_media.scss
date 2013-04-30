@@ -1,9 +1,21 @@
 @media only screen and (min-width: 520px) {
 	
+	.entry {
+		.entry-prose {
+			.entry-cover-wrapper {
+				float: left;
+				margin: 0 20px 20px 0;
+			}
+		}
+	}
+	
 	#sponsors {
 		section {
+			&.synchronous {
+				@include grid-column($columns: 3, $offset: 1);
+			}
 			&.official-hotel {
-				@include grid-column($columns: 3, $offset: 3);
+				@include grid-column($columns: 3);
 			}
 			&.co-organizer {
 				@include grid-column($columns: 3);
@@ -64,8 +76,11 @@
 	
 	#sponsors {
 		section {
+			&.synchronous {
+				@include grid-column($columns: 2, $offset: 3);
+			}
 			&.official-hotel {
-				@include grid-column($columns: 2, $offset: 4);
+				@include grid-column($columns: 2);
 			}
 			&.co-organizer {
 				@include grid-column($columns: 2);
