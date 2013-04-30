@@ -9,4 +9,14 @@ $(document).ready(function() {
 		
 	});
 
+
+	$(window).resize(function() {
+
+		if($('#brand-logo').css('background-color') == '#fff') {
+			$('#prime-nav').css('display','block');
+		}
+
+
+	});
+
 });
