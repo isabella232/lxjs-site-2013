@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 
   	uglify: {
   		dist: {
-  			src: ['public/js/app.js'],
+  			src: ['src/js/main.js'],
   			dest: 'public/js/main.js'
   		}
   	},
