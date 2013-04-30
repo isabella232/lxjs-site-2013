@@ -12,8 +12,13 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 
-		if($('#brand-logo').css('background-color') == '#fff' && $('#prime-nav').css('display') != 'block') {
-			$('#prime-nav').css('display','block');
+		if($('#brand-logo').css('background-color') == 'rgb(255, 255, 255)' && $('#prime-nav').css('display') != 'block') {
+			$('#prime-nav').toggle();
+		}
+
+		if($('#brand-logo').css('background-color') != 'rgb(255, 255, 255)' && $('#prime-nav').css('display') == 'block') {
+			$('#prime-nav').toggle();
+			$('#site-head .toggle-menu').removeClass('active');
 		}
 
 	});
