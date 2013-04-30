@@ -1,4 +1,4 @@
-@media only screen and (min-width: 520px) {
+@media #{$small} {
 	
 	.entry {
 		.entry-prose {
@@ -66,8 +66,12 @@
 
 }
 
-@media only screen and (min-width: 768px) {
+@media #{$medium} {
 	
+	#brand-logo {
+		background-color: #fff;
+	}
+
 	#site-head {
 		.toggle-menu {
 			display: none;
