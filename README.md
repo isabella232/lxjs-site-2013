@@ -1,6 +1,11 @@
 LXJS 2013
 =====
 
+<h1>Important</h1>
+
+Only do development on a separate branch. 
+All changes to master are automatically pulled to the server.
+
 <h1>Installation</h1>
 
 The compilation process is all done with Grunt on NodeJS.
