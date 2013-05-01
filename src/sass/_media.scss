@@ -63,6 +63,12 @@
 			}
 		}
 	}
+	
+	.tickets-list {
+		.ticket-wrapper {
+			@include grid-column($columns: 6);
+		}
+	}
 
 }
 
@@ -166,6 +172,12 @@
 		.discover,
 		.follow,
 		.newsletter {
+			@include grid-column($columns: 4);
+		}
+	}
+	
+	.tickets-list {
+		.ticket-wrapper {
 			@include grid-column($columns: 4);
 		}
 	}

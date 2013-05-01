@@ -47,10 +47,16 @@ module.exports = function(grunt) {
   				"public/guide.html": "src/guide.html",
   				"public/index.html": "src/index.html",
   				"public/register.html": "src/register.html",
+  				"public/register-tpl.html": "src/register-tpl.html",
   				"public/team-and-contacts.html": "src/team-and-contacts.html",
   				"public/workshops.html": "src/workshops.html",
   				"public/speakers/index.html": "src/speakers/index.html",
-				"public/speakers/mike-brevoort.html": "src/speakers/mike-brevoort.html"
+				"public/speakers/mike-brevoort.html": "src/speakers/mike-brevoort.html",
+				"public/speakers/adam-baldwin.html": "src/speakers/adam-baldwin.html",
+				"public/speakers/sara-chipps.html": "src/speakers/sara-chipps.html",
+				"public/speakers/vyacheslav-egorov.html": "src/speakers/vyacheslav-egorov.html"
+
+
   			}
   		},
 
@@ -67,11 +73,15 @@ module.exports = function(grunt) {
   				"public/guide.html": "src/guide.html",
   				"public/index.html": "src/index.html",
   				"public/register.html": "src/register.html",
+  				"public/register-tpl.html": "src/register-tpl.html",
   				"public/team-and-contacts.html": "src/team-and-contacts.html",
   				"public/workshops.html": "src/workshops.html",
     			"public/speakers/index.html": "src/speakers/index.html",
-				"public/speakers/mike-brevoort.html": "src/speakers/mike-brevoort.html"
-  			}
+				"public/speakers/mike-brevoort.html": "src/speakers/mike-brevoort.html",
+				"public/speakers/adam-baldwin.html": "src/speakers/adam-baldwin.html",
+				"public/speakers/sara-chipps.html": "src/speakers/sara-chipps.html",
+				"public/speakers/vyacheslav-egorov.html": "src/speakers/vyacheslav-egorov.html"
+			}
   		}
   	},
 
@@ -112,7 +122,7 @@ module.exports = function(grunt) {
 
   	uglify: {
   		dist: {
-  			src: ['public/js/app.js'],
+  			src: ['src/js/main.js'],
   			dest: 'public/js/main.js'
   		}
   	},
