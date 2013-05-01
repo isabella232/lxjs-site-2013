@@ -3,3 +3,6 @@ package/*
 .sass-cache/*
 public/.DS_Store
 .DS_Store
+npm-debug.log
+
+public/css/main.css
