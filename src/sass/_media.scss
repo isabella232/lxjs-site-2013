@@ -105,6 +105,11 @@
 			font-size: emCalc(24px);
 			@include grid-column($columns: 10, $center: true);
 		}
+		.mod-head {
+			.wrapper {
+				@include grid-column($columns: 10, $center: true);
+			}
+		}
 	}
 	
 	#site-title {
@@ -173,6 +178,15 @@
 	.tickets-list {
 		.ticket-wrapper {
 			@include grid-column($columns: 6);
+		}
+	}
+	
+	.slider {
+		.slide-caption {
+			background: rgba(0,0,0,.6);
+			-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60ffffff,endColorstr=#60ffffff);
+			position: absolute;
+			bottom: 0;
 		}
 	}
 	

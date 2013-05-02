@@ -56,16 +56,78 @@
 				<header class="mod-head">
 					<div class="inner">
 						<h1 class="mod-prime-title">Guide</h1>
+						<div class="wrapper">
+							<a href="#sec-nav" title="Show submenu" class="toggle-submenu"><span>Lorem Ipsum Dolor Sit Amet</span></a>
+							<nav id="sec-nav" role="navigation">
+								<ul>
+									<li class="current-item"><a href="venue" title="Visit the Venue page">Venue</a></li>
+									<li><a href="tour" title="Visit the Tour page">Tour</a></li>
+									<li><a href="travel" title="Visit the Travel page">Travel</a></li>
+									<li><a href="accommodation" title="Visit the Accommodation page">Accommodation</a></li>
+								</ul>
+							</nav>
+						</div>
 					</div>
 				</header>
 				
-				<div class="mod-body">				
-					<div class="soon">
-						<div class="wrapper">			
-							<p>Coming Soon.</p>					
+				<!-- venue -->
+				<section class="mod" id="venue">
+					<header class="mod-head">
+						<div class="inner">
+							<h1 class="mod-prime-title">Venue</h1>
+						</div>
+					</header>	
+					
+					<div class="mod-body entry">
+						<div class="entry-prose">
+							<h2>Cinema São Jorge</h2>
+							<p>We booked Mercado da Ribeira, a great venue overlooking the beautiful river Tagus (one of the largest in Europe). The Venue is located in the newly renovated Lisbon Port, surrounded by great bars, restaurants and coffee shops by the river. The location is ideal and transportation is abundant.</p>
+						</div>
+						
+						<div class="slider inner">
+							<ul class="slide-list" id="featured1" data-orbit data-options="timer_speed:5000; bullets:false; prev_class:slider-prev; next_class:slider-next; caption_class:slide-caption;">
+					        	<li class="slide-wrapper">
+						        	<figure class="slide">
+						        		<a href="#">
+								        	<img src="http://placehold.it/1920x800&text=[img]" />
+								        	<figcaption  class="slide-caption">
+								        		<h1 class="slider-prime-title">Find a Place to Stay</h1>
+									        	<p class="slider-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								        	</figcaption>
+						        		</a>
+						        	</figure>
+						        </li>
+						        <li class="slide-wrapper">
+						        	<figure class="slide">
+						        		<a href="#">
+								        	<img src="http://placehold.it/1920x800&text=[img]" />
+								        	<figcaption  class="slide-caption">
+								        		<h1 class="slider-prime-title">Lorem Ipsum Dolor Sit Amet</h1>
+									        	<p class="slider-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								        	</figcaption>
+							        	</a>
+						        	</figure>
+						        </li>
+						        <li class="slide-wrapper">
+						        	<figure class="slide">
+						        		<a href="#">
+								        	<img src="http://placehold.it/1920x800&text=[img]" />
+								        	<figcaption  class="slide-caption">
+								        		<h1 class="slider-prime-title">Find a Place to Stay</h1>
+									        	<p class="slider-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								        	</figcaption>
+							        	</a>
+						        	</figure>
+						        </li>
+						    </ul>
+						</div>
+					
+						<div class="entry-prose">
+							<h2>How to get there</h2>
 						</div>
 					</div>
-				</div>
+				</section>
+				<!--/ venue -->
 			
 			</section>
 			<!--/ site-body -->
@@ -141,6 +203,14 @@
 		<script type="text/javascript" src="js/selectivizr-min.js"></script>
 		<![endif]-->
 		<!--[if IE 8]><script src="js/font-icons.js"></script><![endif]-->
+		
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/foundation/foundation.orbit.js"></script>
+		
+		<script>
+			$(document).foundation();
+		</script>
+		<!--/ scripts -->
 		
 		<script src="js/main.js"></script>
 		

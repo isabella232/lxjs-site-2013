@@ -199,6 +199,83 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.toggle-submenu {
+	margin: 25px 0 0 0;
+	@include grid-column($columns: 12);
+	border: 0;
+	background: $base-color;
+	font-size: emCalc(20px);
+	font-weight: $body-font-bold;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 45px 0 15px;
+	@include border-radius(4px);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	&:hover {
+		color: inherit;
+	}
+	span:after {
+		@extend .icon;
+		position: absolute;
+		top: 50%;
+		margin-top: -12px;
+		right: 15px;
+		font-size: 24px;
+		color: #fff;
+		content: '\e01d';
+		color: tint($base-color, 50%);
+	}
+}
+
+#sec-nav {
+	display: none;
+	float: left;
+	width: 100%;
+	position: relative;
+	font-size: emCalc(18px);
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		z-index: 100;
+		top: 2px;
+		left: 0;
+		width: 100%;
+		font-weight: $body-font-bold;
+		background: $base-color;
+		overflow: hidden;
+		@include border-radius(4px);
+		li {
+			border-bottom: 1px solid darken($base-color, 10%);
+			&:last-child {
+				border: 0;
+			}
+		}
+		a {
+			background: darken($base-color, 5%);
+			color: #FFF;
+			padding: 10px 15px;
+			display: block;
+			small {
+				display: block;
+				text-transform: uppercase;
+				font-weight: $body-font-regular;
+				color: tint($base-color, 50%);
+			}
+			span {
+				@extend .visually-hidden;
+			}
+		}
+		.current-item a {
+			background: $base-color;
+		}
+	}
+}
+
 .mod {
 	position: relative;
 	margin-bottom: 80px;
@@ -225,6 +302,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.mod-head {
 		margin-bottom: 40px;
+		.wrapper {
+			@include grid-column($columns: 12);
+		}
 	}
 	.mod-prime-title {
 		@include grid-column($columns: 12, $center: true);
@@ -814,4 +894,69 @@ h1, h2, h3, h4, h5, h6 {
 
 #brand-logo {
 	@extend .visually-hidden;
+}
+
+.slider {
+	.orbit-container {
+		margin: 0;
+		width: auto !important;
+		background: #000;
+		.orbit-timer > span {
+			display: none;
+		}
+	}
+	.orbit-slide-number {
+		display: none;
+	}
+	.slider-prev {
+		@extend .hide-for-small;
+		position: absolute;
+		top: 50%;
+		left: 8px;
+		z-index: 10;
+		font-size: 0;
+		color: #fff;
+		margin-top: -32px;
+		> span:before {
+			@extend .icon;
+			content: '\e01e';
+			font-size: 64px;
+		}
+	}
+	.slider-next {
+		@extend .hide-for-small;
+		position: absolute;
+		top: 50%;
+		right: 8px;
+		z-index: 10;
+		font-size: 0;
+		color: #fff;
+		margin-top: -32px;
+		> span:before {
+			@extend .icon;
+			content: '\e01f';
+			font-size: 64px;
+		}
+	}
+	.slide-caption {
+		background: $base-color;		
+		color: #fff;
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		> *:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.slider-prime-title {
+		color: #fff;
+		font-size: emCalc(24px);
+		margin: 0 0 5px 0;
+	}
+	.slider-subtitle {
+		font-size: emCalc(16px);
+	}
+	&.inner {
+		margin: 35px 0 30px 0;
+	}	
 }

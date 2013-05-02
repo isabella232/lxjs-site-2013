@@ -8,6 +8,15 @@ $(document).ready(function() {
 		evt.preventDefault();
 		
 	});
+	
+	$('.toggle-submenu').click(function(evt){
+		
+		$(this).toggleClass('active');
+		$('#sec-nav').toggle();
+		
+		evt.preventDefault();
+		
+	});
 
 
 	$(window).resize(function() {
