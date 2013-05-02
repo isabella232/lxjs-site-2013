@@ -18,7 +18,6 @@ define('PROJECTS_PATH', '/srv/www/2013.lxjs.org');
  * server key for authentication
  **/
 define('SERVER_KEY', 'Ew7odwenhk31d70pgZ7E7y4BOI3VFIp3');
-print exec('whoami');
 
 // parse the json payload
 error_log($_POST['payload']);
