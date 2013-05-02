@@ -32,7 +32,8 @@ if ( $payload->ref === 'refs/heads/master' && $_REQUEST['key'] == SERVER_KEY ) {
         $project_directory = PROJECTS_PATH . $project_name;
 
         // cd into the project dir, git reset and pull changes
-        shell_exec( 'cd ' . $project_directory . '/ && git reset --hard HEAD && git pull' );
+        $output = shell_exec( 'cd ' . $project_directory . '/ && git reset --hard HEAD && git pull' );
+        echo $output;
 }
 
 ?>
