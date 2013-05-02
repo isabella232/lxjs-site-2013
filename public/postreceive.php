@@ -30,7 +30,9 @@ if ( $payload->ref === 'refs/heads/master' && $_REQUEST['key'] == SERVER_KEY ) {
 		$project_name = strtolower($payload->{'repository'}->{'name'});
 		/* define the cd directory based on config
 		cd into the project dir, git reset and pull changes */
-		$output = shell_exec( 'cd ' . PROJECTS_PATH . '/ && git reset --hard HEAD && git pull' );
+		$cmd = 'cd ' . PROJECTS_PATH . '/ && git reset --hard HEAD && git pull';
+		error_log($cmd); 
+		$output = shell_exec($cmd);
 		error_log($output); 
 }
 
