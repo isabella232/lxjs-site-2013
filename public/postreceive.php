@@ -18,6 +18,7 @@ define('PROJECTS_PATH', '/srv/www/2013.lxjs.org');
  * server key for authentication
  **/
 define('SERVER_KEY', 'Ew7odwenhk31d70pgZ7E7y4BOI3VFIp3');
+print exec('whoami');
 
 // parse the json payload
 error_log($_POST['payload']);
@@ -26,11 +27,11 @@ if (!$payload) exit();
 
 // check for payload and server key
 if ( $payload->ref === 'refs/heads/master' && $_REQUEST['key'] == SERVER_KEY ) {
-        // parse the payload for the project name
-        $project_name = strtolower($payload->{'repository'}->{'name'});
-        /* define the cd directory based on config
+		// parse the payload for the project name
+		$project_name = strtolower($payload->{'repository'}->{'name'});
+		/* define the cd directory based on config
 		cd into the project dir, git reset and pull changes */
-        shell_exec( 'cd ' . PROJECTS_PATH . '/ && git reset --hard HEAD && git pull' );
+		shell_exec( 'cd ' . PROJECTS_PATH . '/ && git reset --hard HEAD && git pull' );
 }
 
 ?>
