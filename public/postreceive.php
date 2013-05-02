@@ -20,8 +20,7 @@ define('PROJECTS_PATH', '/srv/www/2013.lxjs.org/');
 define('SERVER_KEY', 'Ew7odwenhk31d70pgZ7E7y4BOI3VFIp3');
 
 // parse the json payload
-$payload = json_decode($_REQUEST['payload']);
-
+$payload = json_decode($_POST['payload']);
 if (!$payload) exit();
 
 // check for payload and server key
@@ -32,8 +31,7 @@ if ( $payload->ref === 'refs/heads/master' && $_REQUEST['key'] == SERVER_KEY ) {
         $project_directory = PROJECTS_PATH . $project_name;
 
         // cd into the project dir, git reset and pull changes
-        $output = shell_exec( 'cd ' . $project_directory . '/ && git reset --hard HEAD && git pull' );
-        echo $output;
+        shell_exec( 'cd ' . $project_directory . '/ && git reset --hard HEAD && git pull' );
 }
 
 ?>
