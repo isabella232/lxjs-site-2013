@@ -107,7 +107,7 @@
 		}
 		.mod-head {
 			.wrapper {
-				@include grid-column($columns: 10, $center: true);
+				@include grid-column($columns: 6, $center: true);
 			}
 		}
 	}
@@ -183,10 +183,13 @@
 	
 	.slider {
 		.slide-caption {
-			background: rgba(0,0,0,.6);
-			-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60ffffff,endColorstr=#60ffffff);
+			background: rgba($base-color, .8);
+			-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#800C486D,endColorstr=#800C486D);
 			position: absolute;
 			bottom: 0;
+		}
+		img {
+			@include border-radius(4px);
 		}
 	}
 	

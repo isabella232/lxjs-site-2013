@@ -273,6 +273,12 @@ h1, h2, h3, h4, h5, h6 {
 		.current-item a {
 			background: $base-color;
 		}
+		li:first-child a {
+			@include border-radius(4px 4px 0 0);
+		}
+		li:last-child a {
+			@include border-radius(0 0 4px 4px);
+		}
 	}
 }
 
@@ -897,10 +903,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider {
+	@include grid-column($columns: 12);
 	.orbit-container {
 		margin: 0;
 		width: auto !important;
-		background: #000;
+		background: none;
 		.orbit-timer > span {
 			display: none;
 		}
@@ -943,6 +950,7 @@ h1, h2, h3, h4, h5, h6 {
 		color: #fff;
 		width: 100%;
 		padding: 15px;
+		@include border-radius(0 0 4px 4px);
 		text-align: center;
 		> *:last-child {
 			margin-bottom: 0;
@@ -958,5 +966,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	&.inner {
 		margin: 35px 0 30px 0;
-	}	
+	}
+	img {
+		@include border-radius(4px 4px 0 0);
+	}
 }
