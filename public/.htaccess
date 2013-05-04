@@ -2,8 +2,8 @@ Options -Indexes
 
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} !^2013\.lxjs\.org$ [NC]
-RewriteRule ^(.*)$ http://2013.lxjs.org/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^2013\.lxjs\.org$ [NC]
+#RewriteRule ^(.*)$ http://2013.lxjs.org/$1 [R=301,L]
 
 # Resolve .php file for extensionless php urls
 RewriteRule ^([^/.]+)$ $1.html [L]
