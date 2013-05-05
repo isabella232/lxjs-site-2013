@@ -53,8 +53,8 @@ module.exports = function(grunt) {
 				"public/speakers/mike-brevoort.html": "src/speakers/mike-brevoort.html",
 				"public/speakers/adam-baldwin.html": "src/speakers/adam-baldwin.html",
 				"public/speakers/sara-chipps.html": "src/speakers/sara-chipps.html",
-				"public/speakers/vyacheslav-egorov.html": "src/speakers/vyacheslav-egorov.html"
-
+				"public/speakers/vyacheslav-egorov.html": "src/speakers/vyacheslav-egorov.html",
+				"public/speakers/dustin-diaz.html": "src/speakers/dustin-diaz.html"
 
   			}
   		},
@@ -78,7 +78,8 @@ module.exports = function(grunt) {
 				"public/speakers/mike-brevoort.html": "src/speakers/mike-brevoort.html",
 				"public/speakers/adam-baldwin.html": "src/speakers/adam-baldwin.html",
 				"public/speakers/sara-chipps.html": "src/speakers/sara-chipps.html",
-				"public/speakers/vyacheslav-egorov.html": "src/speakers/vyacheslav-egorov.html"
+				"public/speakers/vyacheslav-egorov.html": "src/speakers/vyacheslav-egorov.html",
+				"public/speakers/dustin-diaz.html": "src/speakers/dustin-diaz.html"
 			}
   		}
   	},
