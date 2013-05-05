@@ -411,6 +411,13 @@ h1, h2, h3, h4, h5, h6 {
 			@include grid-column($columns: 12, $center: true);
 			text-align: center;
 			margin: 30px 0 0 0;
+			strong {
+				font-weight: $body-font-bold;
+				font-size: emCalc(18px);
+				line-height: 24px;
+				display: block;
+				margin-bottom: 10px;
+			}
 		}
 	}
 	.mod-body {
