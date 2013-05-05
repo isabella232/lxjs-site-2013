@@ -41,6 +41,9 @@
 	&.go span:after {
 		content: '\e00e';
 	}
+	&.register span:after {
+		content: '\e000';
+	}
 	&.alt {
 		background: $base-color;
 		span:after {
@@ -407,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
 		.cta-register {
 			@include grid-column($columns: 12, $center: true);
 			text-align: center;
-			@extend .hidden;
+			margin: 30px 0 0 0;
 		}
 	}
 	.mod-body {
