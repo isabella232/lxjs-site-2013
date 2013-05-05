@@ -186,7 +186,7 @@
 			@include grid-column($columns: 6);
 		}
 		.ticket {
-			min-height: 330px;
+			min-height: 260px; // 360px
 		}
 	}
 	
