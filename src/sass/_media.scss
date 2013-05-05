@@ -35,7 +35,10 @@
 		&.speakers,
 		&.team,
 		&.sections {
-			@include block-grid(2, 15px, true);
+			/* @include block-grid(2, 15px, true); */
+			> li {
+				@include grid-column($columns: 6);
+			}
 		}
 	}
 
@@ -163,7 +166,10 @@
 		&.speakers,
 		&.team,
 		&.sections {
-			@include block-grid(4, 15px, true);
+			/* @include block-grid(4, 15px, true); */
+			> li {
+				@include grid-column($columns: 3);
+			}
 		}
 	}
 		
