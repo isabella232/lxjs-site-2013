@@ -411,6 +411,13 @@ h1, h2, h3, h4, h5, h6 {
 			@include grid-column($columns: 12, $center: true);
 			text-align: center;
 			margin: 30px 0 0 0;
+			strong {
+				font-weight: $body-font-bold;
+				font-size: emCalc(18px);
+				line-height: 24px;
+				display: block;
+				margin-bottom: 10px;
+			}
 		}
 	}
 	.mod-body {
@@ -580,13 +587,17 @@ h1, h2, h3, h4, h5, h6 {
 	.ticket-wrapper {
 		@include grid-column($columns: 12);
 		margin-bottom: 30px;
+		float: none !important;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: -2px;
+		margin-right: -2px;
 	}
 	.ticket {
 		border: 10px solid tint($primary-color, 85%);
 		padding: 25px;
 		@include border-radius(16px);
 		text-align: center;
-		min-height: 260px;
 	}
 	.ticket-data {
 		dt {
@@ -618,9 +629,9 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 	.ticket-foot {
-		/* padding: 25px 25px 15px 25px; */
-		/* background: tint($primary-color, 85%); */
-		/* margin: 0 -25px -25px -25px; */
+		padding: 25px 25px 15px 25px;
+		background: tint($primary-color, 85%);
+		margin: 0 -25px -25px -25px;
 		span {
 			font-weight: $body-font-bold;
 			&:before {
