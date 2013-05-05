@@ -202,4 +202,16 @@
 		}
 	}
 	
+	.slider {
+		.slide-caption {
+			background: rgba($base-color, .8);
+			-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#800C486D,endColorstr=#800C486D);
+			position: absolute;
+			bottom: 0;
+		}
+		img {
+			@include border-radius(4px);
+		}
+	}
+	
 }
