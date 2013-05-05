@@ -179,6 +179,9 @@
 		.ticket-wrapper {
 			@include grid-column($columns: 6);
 		}
+		.ticket {
+			min-height: 330px;
+		}
 	}
 	
 	.slider {
