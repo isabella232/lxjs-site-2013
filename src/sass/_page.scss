@@ -611,6 +611,7 @@ h1, h2, h3, h4, h5, h6 {
 		text-align: center;
 	}
 	.ticket-data {
+		margin-bottom: 20px;
 		dt {
 			@extend .visually-hidden;
 		}
@@ -634,11 +635,13 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: emCalc(32px);
 		font-weight: $body-font-bold;
 		line-height: 1.2;
+		margin-bottom: 0;
 	}
 	.ticket-foot {
 		padding: 25px 25px 15px 25px;
 		background: tint($primary-color, 85%);
-		margin: 0 -25px -25px -25px;
+		margin: 30px -25px -25px -25px;
+		font-size: emCalc(18px);
 		span {
 			font-weight: $body-font-bold;
 			&:before {
