@@ -759,13 +759,13 @@ h1, h2, h3, h4, h5, h6 {
 	> .mod-body {
 		padding-bottom: 0;
 	}
-	h2, h3, h4 {
+	h2 {
 		&:after {
 			content: '';
 			display: block;
 			height: 4px;
 			background-color: $base-color;
-			width: 40px;
+			width: 60px;
 			margin: 5px 0 15px;
 			@include border-radius(2px);
 		}
