@@ -9,6 +9,12 @@
 		}
 	}
 	
+	.boxy-list {
+		.entry {
+			@include grid-column($columns: 6);
+		}
+	}
+	
 	#sponsors {
 		section {
 			&.synchronous {
