@@ -20,6 +20,7 @@ $(document).ready(function() {
 
 
 	$('#sec-nav a').click(function(evt){
+		var scroll = $(document).scrollTop();
 		$('.toggle-submenu span').text($(evt.target).text());
 		$('.section-block').removeClass('active-section');
 		$($(evt.target).attr('href')).addClass('active-section');
@@ -27,6 +28,7 @@ $(document).ready(function() {
 		$('#sec-nav li').removeClass('current-item');
 		$(evt.target).parent().addClass('current-item');
 		evt.preventDefault();
+		$(document).scrollTop(scroll);
 	});
 
 	if($(window.location.hash).length > 0) {
