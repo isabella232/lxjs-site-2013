@@ -449,6 +449,20 @@ h1, h2, h3, h4, h5, h6 {
 			padding-bottom: 0;
 		}
 	}
+	&.section-block {
+		display: none;
+		margin-bottom: 80px;
+		border-bottom: 0;
+		&.active-section {
+			display: block;
+		}
+		&:after {
+			display: none;
+		}
+		.mod-body {
+			padding-bottom: 0;
+		}
+	}
 }
 
 #sponsors {
