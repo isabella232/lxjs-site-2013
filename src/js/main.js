@@ -28,6 +28,7 @@ $(document).ready(function() {
 		$('#sec-nav li').removeClass('current-item');
 		$(evt.target).parent().addClass('current-item');
 		evt.preventDefault();
+		window.location.hash = $(evt.target).attr('href');
 		$(document).scrollTop(scroll);
 	});
 
