@@ -57,7 +57,9 @@ module.exports = function(grunt) {
 				"public/speakers/vyacheslav-egorov.html": "src/speakers/vyacheslav-egorov.html",
 				"public/speakers/dustin-diaz.html": "src/speakers/dustin-diaz.html",
         "public/speakers/brian-leroux.html": "src/speakers/brian-leroux.html",
-        "public/speakers/laura-kalbag.html": "src/speakers/laura-kalbag.html"
+        "public/speakers/laura-kalbag.html": "src/speakers/laura-kalbag.html",
+        "public/speakers/shane-hudson.html": "src/speakers/shane-hudson.html",
+        "public/speakers/jed-schmidt.html": "src/speakers/jed-schmidt.html"
 
   			}
   		},
@@ -85,7 +87,9 @@ module.exports = function(grunt) {
 				"public/speakers/vyacheslav-egorov.html": "src/speakers/vyacheslav-egorov.html",
 				"public/speakers/dustin-diaz.html": "src/speakers/dustin-diaz.html",
 				"public/speakers/brian-leroux.html": "src/speakers/brian-leroux.html",
-        "public/speakers/laura-kalbag.html": "src/speakers/laura-kalbag.html"
+        "public/speakers/laura-kalbag.html": "src/speakers/laura-kalbag.html",
+        "public/speakers/shane-hudson.html": "src/speakers/shane-hudson.html",
+        "public/speakers/jed-schmidt.html": "src/speakers/jed-schmidt.html"
 			}
   		}
   	},
