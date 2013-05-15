@@ -14,20 +14,6 @@
 			@include grid-column($columns: 6);
 		}
 	}
-	
-	#sponsors {
-		section {
-			&.synchronous {
-				@include grid-column($columns: 3, $offset: 1);
-			}
-			&.official-hotel {
-				@include grid-column($columns: 3);
-			}
-			&.co-organizer {
-				@include grid-column($columns: 3);
-			}
-		}
-	}
 		
 	.contacts-list {
 		text-align: center;
@@ -84,20 +70,6 @@
 	#site-head {
 		.toggle-menu {
 			display: none;
-		}
-	}
-	
-	#sponsors {
-		section {
-			&.synchronous {
-				@include grid-column($columns: 2, $offset: 3);
-			}
-			&.official-hotel {
-				@include grid-column($columns: 2);
-			}
-			&.co-organizer {
-				@include grid-column($columns: 2);
-			}
 		}
 	}
 	

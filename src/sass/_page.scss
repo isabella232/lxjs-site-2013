@@ -469,18 +469,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #sponsors {
+	.mod-body {
+		text-align: center;
+		padding-left: 15px;
+	}
+	.logo-list {
+		float: left;
+		margin: 0;
+	}
+	.logo-wrapper {
+		float: left;
+		max-width: 140px;
+		margin: 0 10px 10px 0;
+	}
 	section {
-		margin-bottom: 20px;
-		&.synchronous {
-			@include grid-column($columns: 6);
-		}
-		&.co-organizer {
-			@include grid-column($columns: 6);
-		}
-		&.official-hotel {
-			@include grid-column($columns: 6);
-		}
+		display: inline-block;
+		margin: 0 0 10px -3px;
 		> h1 {
+			text-align: left;
 			font-size: emCalc(14px);
 			color: tint($base-color, 30%);
 			font-weight: inherit;
