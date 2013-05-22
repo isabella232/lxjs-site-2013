@@ -59,7 +59,9 @@ module.exports = function(grunt) {
         "public/speakers/brian-leroux.html": "src/speakers/brian-leroux.html",
         "public/speakers/laura-kalbag.html": "src/speakers/laura-kalbag.html",
         "public/speakers/shane-hudson.html": "src/speakers/shane-hudson.html",
-        "public/speakers/jed-schmidt.html": "src/speakers/jed-schmidt.html"
+        "public/speakers/jed-schmidt.html": "src/speakers/jed-schmidt.html",
+        "public/speakers/andrew-nesbitt.html": "src/speakers/andrew-nesbitt.html",
+        "public/speakers/gilles-ruppert.html": "src/speakers/gilles-ruppert.html"
 
   			}
   		},
@@ -89,7 +91,9 @@ module.exports = function(grunt) {
 				"public/speakers/brian-leroux.html": "src/speakers/brian-leroux.html",
         "public/speakers/laura-kalbag.html": "src/speakers/laura-kalbag.html",
         "public/speakers/shane-hudson.html": "src/speakers/shane-hudson.html",
-        "public/speakers/jed-schmidt.html": "src/speakers/jed-schmidt.html"
+        "public/speakers/jed-schmidt.html": "src/speakers/jed-schmidt.html",
+        "public/speakers/andrew-nesbitt.html": "src/speakers/andrew-nesbitt.html",
+        "public/speakers/gilles-ruppert.html": "src/speakers/gilles-ruppert.html"
 			}
   		}
   	},
