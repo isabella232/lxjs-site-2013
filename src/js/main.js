@@ -30,6 +30,7 @@ $(document).ready(function() {
 		evt.preventDefault();
 		window.location.hash = $(evt.target).attr('href');
 		$(document).scrollTop(scroll);
+		$('.orbit-slides-container').css('height','auto');
 	});
 
 	if($(window.location.hash).length > 0) {
