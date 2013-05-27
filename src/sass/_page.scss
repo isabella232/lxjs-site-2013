@@ -785,6 +785,11 @@ h1, h2, h3, h4, h5, h6 {
 			@include border-radius(2px);
 			margin: 30px 0;
 		}
+		.extra {
+			display: block;
+			color: tint($base-color, 50%);
+			line-height: inherit;
+		}
 	}
 	> .mod-body {
 		padding-bottom: 0;
@@ -799,6 +804,9 @@ h1, h2, h3, h4, h5, h6 {
 			margin: 5px 0 25px;
 			@include border-radius(2px);
 		}
+	}
+	.flex-frame {
+		@include flex-video-container;
 	}
 }
 
