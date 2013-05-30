@@ -62,8 +62,8 @@ module.exports = function(grunt) {
         "public/speakers/jed-schmidt.html": "src/speakers/jed-schmidt.html",
         "public/speakers/andrew-nesbitt.html": "src/speakers/andrew-nesbitt.html",
         "public/speakers/gilles-ruppert.html": "src/speakers/gilles-ruppert.html",
-        "public/speakers/raquel-velez.html": "src/speakers/raquel-velez.html"
-
+        "public/speakers/raquel-velez.html": "src/speakers/raquel-velez.html",
+        "public/speakers/ivan-babrou.html": "src/speakers/ivan-babrou.html"
   			}
   		},
 
@@ -95,7 +95,8 @@ module.exports = function(grunt) {
         "public/speakers/jed-schmidt.html": "src/speakers/jed-schmidt.html",
         "public/speakers/andrew-nesbitt.html": "src/speakers/andrew-nesbitt.html",
         "public/speakers/gilles-ruppert.html": "src/speakers/gilles-ruppert.html",
-        "public/speakers/raquel-velez.html": "src/speakers/raquel-velez.html"
+        "public/speakers/raquel-velez.html": "src/speakers/raquel-velez.html",
+        "public/speakers/ivan-babrou.html": "src/speakers/ivan-babrou.html"
 			}
   		}
   	},
