@@ -65,7 +65,8 @@ module.exports = function(grunt) {
         "public/speakers/raquel-velez.html": "src/speakers/raquel-velez.html",
         "public/speakers/ivan-babrou.html": "src/speakers/ivan-babrou.html",
         "public/speakers/robert-nyman.html": "src/speakers/robert-nyman.html",
-        "public/speakers/bill-mills.html": "src/speakers/bill-mills.html"
+        "public/speakers/bill-mills.html": "src/speakers/bill-mills.html",
+        "public/speakers/angelina-fabbro.html": "src/speakers/angelina-fabbro.html"
   			}
   		},
 
@@ -100,7 +101,8 @@ module.exports = function(grunt) {
         "public/speakers/raquel-velez.html": "src/speakers/raquel-velez.html",
         "public/speakers/ivan-babrou.html": "src/speakers/ivan-babrou.html",
         "public/speakers/robert-nyman.html": "src/speakers/robert-nyman.html",
-        "public/speakers/bill-mills.html": "src/speakers/bill-mills.html"
+        "public/speakers/bill-mills.html": "src/speakers/bill-mills.html",
+        "public/speakers/angelina-fabbro.html": "src/speakers/angelina-fabbro.html"
 			}
   		}
   	},
