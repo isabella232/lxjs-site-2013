@@ -68,7 +68,8 @@ module.exports = function(grunt) {
         "public/speakers/bill-mills.html": "src/speakers/bill-mills.html",
         "public/speakers/angelina-fabbro.html": "src/speakers/angelina-fabbro.html",
         "public/speakers/charlie-crane.html": "src/speakers/charlie-crane.html",
-        "public/speakers/mark-boas.html": "src/speakers/mark-boas.html"
+        "public/speakers/mark-boas.html": "src/speakers/mark-boas.html",
+        "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html"
   			}
   		},
 
@@ -106,7 +107,8 @@ module.exports = function(grunt) {
         "public/speakers/bill-mills.html": "src/speakers/bill-mills.html",
         "public/speakers/angelina-fabbro.html": "src/speakers/angelina-fabbro.html",
         "public/speakers/charlie-crane.html": "src/speakers/charlie-crane.html",
-        "public/speakers/mark-boas.html": "src/speakers/mark-boas.html"
+        "public/speakers/mark-boas.html": "src/speakers/mark-boas.html",
+        "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html"
 			}
   		}
   	},
