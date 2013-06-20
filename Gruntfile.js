@@ -69,7 +69,8 @@ module.exports = function(grunt) {
         "public/speakers/angelina-fabbro.html": "src/speakers/angelina-fabbro.html",
         "public/speakers/charlie-crane.html": "src/speakers/charlie-crane.html",
         "public/speakers/mark-boas.html": "src/speakers/mark-boas.html",
-        "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html"
+        "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html",
+        "public/speakers/domenic-denicola.html": "src/speakers/domenic-denicola.html"
   			}
   		},
 
@@ -108,7 +109,8 @@ module.exports = function(grunt) {
         "public/speakers/angelina-fabbro.html": "src/speakers/angelina-fabbro.html",
         "public/speakers/charlie-crane.html": "src/speakers/charlie-crane.html",
         "public/speakers/mark-boas.html": "src/speakers/mark-boas.html",
-        "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html"
+        "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html",
+        "public/speakers/domenic-denicola.html": "src/speakers/domenic-denicola.html"
 			}
   		}
   	},
