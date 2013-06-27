@@ -72,7 +72,8 @@ module.exports = function(grunt) {
         "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html",
         "public/speakers/domenic-denicola.html": "src/speakers/domenic-denicola.html",
         "public/speakers/michal-budzynski.html": "src/speakers/michal-budzynski.html",
-        "public/speakers/oli-evans.html": "src/speakers/oli-evans.html"
+        "public/speakers/oli-evans.html": "src/speakers/oli-evans.html",
+        "public/speakers/tim-park.html": "src/speakers/tim-park.html"
   			}
   		},
 
@@ -114,7 +115,8 @@ module.exports = function(grunt) {
         "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html",
         "public/speakers/domenic-denicola.html": "src/speakers/domenic-denicola.html",
         "public/speakers/michal-budzynski.html": "src/speakers/michal-budzynski.html",
-        "public/speakers/oli-evans.html": "src/speakers/oli-evans.html"
+        "public/speakers/oli-evans.html": "src/speakers/oli-evans.html",
+        "public/speakers/tim-park.html": "src/speakers/tim-park.html"
 			}
   		}
   	},
