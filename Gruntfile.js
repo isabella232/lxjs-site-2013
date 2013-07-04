@@ -64,7 +64,17 @@ module.exports = function(grunt) {
         "public/speakers/gilles-ruppert.html": "src/speakers/gilles-ruppert.html",
         "public/speakers/raquel-velez.html": "src/speakers/raquel-velez.html",
         "public/speakers/ivan-babrou.html": "src/speakers/ivan-babrou.html",
-        "public/speakers/robert-nyman.html": "src/speakers/robert-nyman.html"
+        "public/speakers/robert-nyman.html": "src/speakers/robert-nyman.html",
+        "public/speakers/bill-mills.html": "src/speakers/bill-mills.html",
+        "public/speakers/angelina-fabbro.html": "src/speakers/angelina-fabbro.html",
+        "public/speakers/charlie-crane.html": "src/speakers/charlie-crane.html",
+        "public/speakers/mark-boas.html": "src/speakers/mark-boas.html",
+        "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html",
+        "public/speakers/domenic-denicola.html": "src/speakers/domenic-denicola.html",
+        "public/speakers/michal-budzynski.html": "src/speakers/michal-budzynski.html",
+        "public/speakers/oli-evans.html": "src/speakers/oli-evans.html",
+        "public/speakers/tim-park.html": "src/speakers/tim-park.html",
+        "public/speakers/james-halliday.html": "src/speakers/james-halliday.html"
   			}
   		},
 
@@ -98,7 +108,17 @@ module.exports = function(grunt) {
         "public/speakers/gilles-ruppert.html": "src/speakers/gilles-ruppert.html",
         "public/speakers/raquel-velez.html": "src/speakers/raquel-velez.html",
         "public/speakers/ivan-babrou.html": "src/speakers/ivan-babrou.html",
-        "public/speakers/robert-nyman.html": "src/speakers/robert-nyman.html"
+        "public/speakers/robert-nyman.html": "src/speakers/robert-nyman.html",
+        "public/speakers/bill-mills.html": "src/speakers/bill-mills.html",
+        "public/speakers/angelina-fabbro.html": "src/speakers/angelina-fabbro.html",
+        "public/speakers/charlie-crane.html": "src/speakers/charlie-crane.html",
+        "public/speakers/mark-boas.html": "src/speakers/mark-boas.html",
+        "public/speakers/estelle-weyl.html": "src/speakers/estelle-weyl.html",
+        "public/speakers/domenic-denicola.html": "src/speakers/domenic-denicola.html",
+        "public/speakers/michal-budzynski.html": "src/speakers/michal-budzynski.html",
+        "public/speakers/oli-evans.html": "src/speakers/oli-evans.html",
+        "public/speakers/tim-park.html": "src/speakers/tim-park.html",
+        "public/speakers/james-halliday.html": "src/speakers/james-halliday.html"
 			}
   		}
   	},
