@@ -74,7 +74,8 @@ module.exports = function(grunt) {
         "public/speakers/michal-budzynski.html": "src/speakers/michal-budzynski.html",
         "public/speakers/oli-evans.html": "src/speakers/oli-evans.html",
         "public/speakers/tim-park.html": "src/speakers/tim-park.html",
-        "public/speakers/james-halliday.html": "src/speakers/james-halliday.html"
+        "public/speakers/james-halliday.html": "src/speakers/james-halliday.html",
+        "public/speakers/thorsten-lorenz.html": "src/speakers/thorsten-lorenz.html"
   			}
   		},
 
@@ -118,7 +119,8 @@ module.exports = function(grunt) {
         "public/speakers/michal-budzynski.html": "src/speakers/michal-budzynski.html",
         "public/speakers/oli-evans.html": "src/speakers/oli-evans.html",
         "public/speakers/tim-park.html": "src/speakers/tim-park.html",
-        "public/speakers/james-halliday.html": "src/speakers/james-halliday.html"
+        "public/speakers/james-halliday.html": "src/speakers/james-halliday.html",
+        "public/speakers/thorsten-lorenz.html": "src/speakers/thorsten-lorenz.html"
 			}
   		}
   	},
