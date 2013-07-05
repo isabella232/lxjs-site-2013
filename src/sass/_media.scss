@@ -9,17 +9,9 @@
 		}
 	}
 	
-	#sponsors {
-		section {
-			&.synchronous {
-				@include grid-column($columns: 3, $offset: 1);
-			}
-			&.official-hotel {
-				@include grid-column($columns: 3);
-			}
-			&.co-organizer {
-				@include grid-column($columns: 3);
-			}
+	.boxy-list {
+		.entry {
+			@include grid-column($columns: 6);
 		}
 	}
 		
@@ -78,20 +70,6 @@
 	#site-head {
 		.toggle-menu {
 			display: none;
-		}
-	}
-	
-	#sponsors {
-		section {
-			&.synchronous {
-				@include grid-column($columns: 2, $offset: 3);
-			}
-			&.official-hotel {
-				@include grid-column($columns: 2);
-			}
-			&.co-organizer {
-				@include grid-column($columns: 2);
-			}
 		}
 	}
 	
@@ -189,10 +167,12 @@
 	
 	.slider {
 		.slide-caption {
-			background: rgba($base-color, .8);
-			-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#800C486D,endColorstr=#800C486D);
+			background: rgba($base-color, .7);
+			-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#700C486D,endColorstr=#700C486D);
 			position: absolute;
 			bottom: 0;
+			left: 0;
+			z-index: 10;
 		}
 		img {
 			@include border-radius(4px);

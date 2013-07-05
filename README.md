@@ -22,4 +22,4 @@ In case the bake module is still not available through npm use the version bundl
 To run compass the latest version of zurb-foundation has to be installed.
 [sudo] gem install zurb-foundation
 
-The default task is the development watcher.
+The default task is the development watcher. 
