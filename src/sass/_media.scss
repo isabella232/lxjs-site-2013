@@ -12,6 +12,9 @@
 	.boxy-list {
 		.entry {
 			@include grid-column($columns: 6);
+			&:nth-child(odd) {
+				clear: left;
+			}
 		}
 	}
 		
