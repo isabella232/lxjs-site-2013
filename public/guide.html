@@ -56,14 +56,16 @@
 				<header class="mod-head">
 					<div class="inner">
 						<h1 class="mod-prime-title">Guide</h1>
+						<p class="mod-description">How to get there, where to stay and what to do.</p>
 						<div class="wrapper">
-							<a href="#sec-nav" title="Show submenu" class="toggle-submenu"><span>Lorem Ipsum Dolor Sit Amet</span></a>
+							<a href="#sec-nav" title="Show submenu" class="toggle-submenu"><span>Venue</span></a>
 							<nav id="sec-nav" role="navigation">
 								<ul>
-									<li class="current-item"><a href="venue" title="Visit the Venue page">Venue</a></li>
-									<li><a href="tour" title="Visit the Tour page">Tour</a></li>
-									<li><a href="travel" title="Visit the Travel page">Travel</a></li>
-									<li><a href="accommodation" title="Visit the Accommodation page">Accommodation</a></li>
+									<li class="current-item"><a href="#venue" title="Visit the Venue page">Venue</a></li>
+									<li><a href="#travel" title="Visit the Travel page">Travel</a></li>
+									<li><a href="#accommodation" title="Visit the Accommodation page">Accommodation</a></li>
+									<li><a href="#tour" title="Visit the Tour page">Tour & City Info</a></li>
+									<li><a href="#significant-other" title="Visit the Significant Other Track page">Significant Other Track</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -71,64 +73,468 @@
 				</header>
 				
 				<!-- venue -->
-				<section class="mod" id="venue">
+				<section class="mod section-block active-section" id="venue">
 					<header class="mod-head">
 						<div class="inner">
 							<h1 class="mod-prime-title">Venue</h1>
 						</div>
-					</header>	
+					</header>
+					
 					
 					<div class="mod-body entry">
-						<div class="entry-prose">
-							<h2>Cinema São Jorge</h2>
-							<p>We booked Mercado da Ribeira, a great venue overlooking the beautiful river Tagus (one of the largest in Europe). The Venue is located in the newly renovated Lisbon Port, surrounded by great bars, restaurants and coffee shops by the river. The location is ideal and transportation is abundant.</p>
+					
+						<div class="slider">
+							<div class="preloader"></div>
+							<ul class="slide-list" id="featured1" data-orbit data-options="timer_speed:5000; bullets:false; prev_class:slider-prev; next_class:slider-next; caption_class:slide-caption;">
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-venue-facade.jpg" alt="Cinema São Jorge: Facade" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Centrally located on Avenida de Liberdade</h1>
+											<p class="slider-subtitle">Over half a century old, the cinema has been privileged with an amazing, lively location.</p>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-venue-sala-manoel-oliveira.jpg" alt="Cinema São Jorge: Sala Manoel de Oliveira" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Sala Manoel de Oliveira</h1>
+											<p class="slider-subtitle">Primarily used for concerts, cinema and theatre the beautiful "sala Manoel de Oliveira" can seat over 800 people.</p>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-venue-bar.jpg" alt="Cinema São Jorge: Bar" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Theater Café</h1>
+											<p class="slider-subtitle">Next to an amazing location and plenty of space there is always the bar with it's characteristic Art Deco style.</p>
+										</figcaption>
+									</figure>
+								</li>
+							</ul>
 						</div>
 						
-						<div class="slider inner">
-							<ul class="slide-list" id="featured1" data-orbit data-options="timer_speed:5000; bullets:false; prev_class:slider-prev; next_class:slider-next; caption_class:slide-caption;">
-					        	<li class="slide-wrapper">
-						        	<figure class="slide">
-						        		<a href="#">
-								        	<img src="http://placehold.it/980x540&text=[img]" />
-								        	<figcaption  class="slide-caption">
-								        		<h1 class="slider-prime-title">Lipsum Dolor Ya</h1>
-									        	<p class="slider-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-								        	</figcaption>
-						        		</a>
-						        	</figure>
-						        </li>
-						        <li class="slide-wrapper">
-						        	<figure class="slide">
-						        		<a href="#">
-								        	<img src="http://placehold.it/980x540&text=[img]" />
-								        	<figcaption  class="slide-caption">
-								        		<h1 class="slider-prime-title">Lorem Ipsum Dolor Sit Amet</h1>
-									        	<p class="slider-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-								        	</figcaption>
-							        	</a>
-						        	</figure>
-						        </li>
-						        <li class="slide-wrapper">
-						        	<figure class="slide">
-						        		<a href="#">
-								        	<img src="http://placehold.it/980x540&text=[img]" />
-								        	<figcaption  class="slide-caption">
-								        		<h1 class="slider-prime-title">Dolor ipsum lorem</h1>
-									        	<p class="slider-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-								        	</figcaption>
-							        	</a>
-						        	</figure>
-						        </li>
-						    </ul>
-						</div>
-					
 						<div class="entry-prose">
+							<h2>Cinema São Jorge</h2>
+							<p>We booked Cinema São Jorge, a beautiful movie theather from the early 50s. The Venue is located in the heart of Lisbon at Avenida de Liberdade, one of the most prominent boulevards of Lisbon. Surrounded by some great restaurants, coffeeshops and only a pleasant stroll away from Lisbon's gorgeous riverside. The location is ideal and transportation is abundant.</p>
+							<ul class="boxy-list">
+								<li class="entry">
+									<h3>Location</h3>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Avenida da Liberdade, 175<br />
+											1250-141 Lisboa, Portugal
+										</dd>
+										<dt>Map</dt>
+										<dd class="flex-frame">
+											<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Cinema+S%C3%A3o+Jorge,+Avenida+da+Liberdade,+Lisbon,+Portugal&amp;aq=0&amp;oq=cinema+s%C3%A3o&amp;sll=38.724132,-9.150227&amp;sspn=0.006453,0.016383&amp;ie=UTF8&amp;hq=Cinema+S%C3%A3o+Jorge,&amp;hnear=Avenida+da+Liberdade,+Lisboa,+Portugal&amp;t=m&amp;ll=38.720642,-9.146483&amp;spn=0.008036,0.013733&amp;z=16&amp;output=embed"></iframe>
+										</dd>
+									</dl>
+								</li>
+								<li class="entry">
+									<h3>Details</h3>
+									<dl>
+										<dt>Phone</dt>
+										<dd><a href="tel:00351213103400" title="Make a call">+351 213 103 400</a></dd>
+										<dt>Email</dt>
+										<dd><a href="mailto:cinemasaojorge@egeac.pt" title="Send email">cinemasaojorge@egeac.pt</a></dd>
+										<dt>Website</dt>
+										<dd><a href="http://cinemasaojorge.pt" title="Visit Cinema São Jorge website">cinemasaojorge.pt</a></dd>
+									</dl>
+								</li>
+							</ul>
+							<hr />
 							<h2>How to get there</h2>
+							<ul class="boxy-list">
+								<li class="entry">
+									<h3>Subway</h3>
+									<p>Just take the "Metro" blue line to "Avenida". The station is right next to the venue. <a href="http://www.metrolisboa.pt/wp-content/uploads/Mapadarede_Metro_julho2012.pdf" title="Download the Metro map">Download the subway map (PDF)</a> for more info.</p>
+								</li>
+								<li class="entry">
+									<h3>Bus</h3>
+									<p>You can take any of the 205, 207, 709, 711, 732, 736, 746 or 783 buses to "Avenida". The station is right next to the venue. <a href="http://www.carris.pt/en/buslines/" title="View the Carris timetables" target="_blank">Check the timetables</a> for more info.</p>
+								</li>
+								<li class="entry">
+									<h3>Train</h3>
+									<p>You can take the "Cascais" line towards "Cais do Sodré" station or the "Sintra" line towards "Rossio" station and then take the subway blue line to "Avenida". This station is right next to the venue. <a href="http://www.cp.pt/cp/displayPage.do?vgnextoid=3fa66e29d6b74010VgnVCM1000007b01a8c0RCRD" title="View the CP Timetables" target="_blank">Check the timetables</a> for more info.</p>
+								</li>
+								<li class="entry">
+									<h3>Parking</h3>
+									<p>If you can't find a parking spot next to Cinema São Jorge, there are some parking lots along Avenida da Liberdade. <a href="http://en.parkopedia.pt/parking/avenida_da_liberdade_175_1250_141_lisboa/" title="Visit Parkopedia" target="_blank">Check Parkopedia</a> for more info.</p>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</section>
 				<!--/ venue -->
+
+				<!-- tour -->
+				<section class="mod section-block" id="tour">
+					<header class="mod-head">
+						<div class="inner">
+							<h1 class="mod-prime-title">Tour &amp; City Info</h1>
+						</div>
+					</header>	
+					
+					<div class="mod-body entry">
+					
+						<div class="slider">
+							<div class="preloader"></div>
+							<ul class="slide-list" id="featured3" data-orbit data-options="timer_speed:5000; bullets:false; prev_class:slider-prev; next_class:slider-next; caption_class:slide-caption;">
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-tour-chiado.jpg" alt="Baixa and Chiado" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Baixa and Chiado</h1>
+											<p class="slider-subtitle">The cultural point of Lisbon and an elegant shopping area with all sorts of facilities and street entertainment.</p>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-tour-alfama.jpg" alt="Alfama" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Alfama</h1>
+											<p class="slider-subtitle">Typical Lisbon neighborhood where fado is kind.</p>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-tour-belem.jpg" alt="Baixa and Chiado" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Belém</h1>
+											<p class="slider-subtitle">Famous as the place from which many of the great Portuguese explorers set off on their voyages of discovery.</p>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-tour-bairro.jpg" alt="Bairro Alto" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Bairro Alto</h1>
+											<p class="slider-subtitle">The heart of Lisbon's youth culture and nightlife.</p>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-tour-sintra.jpg" alt="Sintra" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Sintra</h1>
+											<p class="slider-subtitle">Small little town by Lisbon with some of the most spectacular palaces in Portugal.</p>
+										</figcaption>
+									</figure>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="entry-prose">
+							<h2>The Sunny Lisbon</h2>
+							<p>Lisbon is the warm and sunny capital city of Portugal, and the largest city in the country. Rich in culture and architecture, it is one of the oldest European cities, which over time was known by many names such as Luxbona, Lixbuna or Ulixbone (names which gave way to the commonly used LX shorthand).</p>
+							<p>Along it's seven hills, while walking along the cobbled streets known as Calçada Portuguesa, you will find amazing food, amazing architectural relics and various museums. And don't forget to stroll along the Tagus river, the narrow streets of Alfama, vist the nightlife of Bairro Alto, the classic and elegant stores of Chiado or the gardens of Belém. And while you're at it, do not forget to try some Pastéis de Belém!</p>
+							<hr />
+							<h2>Tips & Tricks</h2>
+							<ul class="boxy-list">
+								<li class="entry">
+									<h3>Arriving</h3>
+									<p>Just take the "Metro" red line from the airport until you reach one of the other lines, from which you can go into the city centre, hotels and the venue. <a href="http://www.metrolisboa.pt/wp-content/uploads/Mapadarede_Metro_julho2012.pdf" title="Download the Metro map">Download the subway map (PDF)</a> for more info.</p>
+									<p>You can also take one of the Aero shuttles into the city. It runs every 30 minutes and costs €3,15, and you can use the ticket for the rest of the day.</p>
+									<p>Or you can get a taxi from Arrivals. However, some of our taxi drivers can be known for ripping off some customers, so you can always get one from Departures (one floor above) where you might not find such problems.</p>
+								</li>
+								<li class="entry">
+									<h3>Getting Around</h3>
+									<p>The best way to get around is by getting a Lisboa Card which you can use in every kind of transport around the city and that will get you free admission to more than 80 museums and attractions.</p>
+									<p>You can get one for €18,50 for 24h, €31,50 for 48h and €39 for 72h. Or you can get the 7 Colinas / Viva Viagem Card for 50 cents and charge a day fare onto it that will get you around in the Carris and Metro networks for €1,40 or you can get an unlimited daily ticket for €6.</p>
+									<p>Taxis are fairly cheap and will get you around the city for around €5 to €10 a ride. Be aware that they can charge you extra for carrying big luggage of if you called them on the phone (+351 218119000).</p>
+								</li>
+							</ul>
+							<hr />
+							<h2>Eating</h2>
+							<ul class="boxy-list">
+								<li class="entry">
+									<h3>A Taberna da Rua das Flores</h3>
+									<p>Long-forgotten recipes, from cod dishes to meat sandwichess.</p>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Rua das Flores, 103<br />
+											1200-194 Lisboa
+										</dd>
+									</dl>
+								</li>
+								<li class="entry">
+									<h3>Cervejaria Ramiro</h3>
+									<p>The tradition of well serving seafood.</p>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Av. Almirante Reis, 1-H<br />
+											1150-007 Lisboa
+										</dd>
+									</dl>
+								</li>
+								<li class="entry">
+									<h3>Pizzeria Casanova</h3>
+									<p>Probably the best pizzas in Lisbon.</p>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Av. Infante Dom Henrique, Loja 7<br />
+											1900-264 Lisboa
+										</dd>
+									</dl>
+								</li>
+								<li class="entry">
+									<h3>Sinal Vermelho</h3>
+									<p>Traditional Portuguese dishes.</p>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Rua das Gáveas, 89<br />
+											1200-206 Lisboa
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<hr />
+							<h2>Drinking</h2>
+							<ul class="boxy-list">
+								<li class="entry">
+									<h3>Artis Wine Bar</h3>
+									<p>Wine bar in Bairro Alto.</p>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Rua do Diário de Notícias, 95<br />
+											1200-142 Lisboa
+										</dd>
+									</dl>
+								</li>
+								<li class="entry">
+									<h3>Bar da Velha Senhora</h3>
+									<p>Burlesque decor & ceilings with frescoes.</p>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Rua Nova do Carvalho, 38<br />
+											1200-291 Lisboa
+										</dd>
+									</dl>
+								</li>
+								<li class="entry">
+									<h3>Clube Ferroviário</h3>
+									<p>One of Lisbon's hottest terrace bars.</p>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Rua de Santa Apolónia, 59-63<br />
+											1100-468 Lisboa
+										</dd>
+									</dl>
+								</li>
+								<li class="entry">
+									<h3>Pois, Café</h3>
+									<p>A great place to get some work done.</p>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Rua São João da Praça, 93-95<br />
+											1100-521 Lisboa
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!--/ venue -->
+
+				<!-- travel -->
+				<section class="mod section-block" id="travel">
+					<header class="mod-head">
+						<div class="inner">
+							<h1 class="mod-prime-title">Travel</h1>
+						</div>
+					</header>	
+					
+					<div class="mod-body entry">				
+						<div class="entry-prose">
+							<h2>Travel Agency for Attendees</h2>
+							<p>This year we have partnered with <a href="http://www.osiris.pt/" title="Visit Osiris website" target="_blank">Osiris</a>, a Travel Agency that will help you book your flight, transfer and hotel.</p>
+							<p>They'll make sure you get only what you need.</p>
+							<p>Just contact <strong>Teresa Castanho</strong> at <a href="mailto:teresacastanho@osiris.pt" title="Send an email to Teresa Castanho">teresacastanho@osiris.pt</a> with the subject <strong>[LXJS2013]</strong> and she'll take it from there.</p>
+						</div>
+					</div>
+				</section>
+				<!--/ travel -->
+
+				<!-- accommodation -->
+				<section class="mod section-block" id="accommodation">
+					<header class="mod-head">
+						<div class="inner">
+							<h1 class="mod-prime-title">Accommodation</h1>
+						</div>
+					</header>	
+					
+					<div class="mod-body entry">
+					
+						<div class="slider">
+							<div class="preloader"></div>
+							<ul class="slide-list" id="featured2" data-orbit data-options="timer_speed:5000; bullets:false; prev_class:slider-prev; next_class:slider-next; caption_class:slide-caption;">
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-hotelflorida-interior-a.jpg" alt="Hotel Florida: Interior A" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Lobby</h1>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-hotelflorida-interior-b.jpg" alt="Hotel Florida: Interior B" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Audrey & Humphrey</h1>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-hotelflorida-interior-c.jpg" alt="Hotel Florida: Interior C" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Double Room</h1>
+										</figcaption>
+									</figure>
+								</li>
+								<li class="slide-wrapper">
+									<figure class="slide">
+										<img src="img/slide-hotelflorida-terrace.jpg" alt="Hotel Florida: Terrace" width="980" height="540" />
+										<figcaption  class="slide-caption">
+											<h1 class="slider-prime-title">Terrace</h1>
+										</figcaption>
+									</figure>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="entry-prose">
+							<h2>Hotel Florida</h2>
+							<p>Find all of the defining characteristics of Lisbon – charm, intimacy, glamour, and a sense of classic cinema – exemplified in Hotel Florida. With a convenient location near many attractions, Hotel Florida offers easy access to all parts of the city as it sits steps away from the main underground station, Marquês de Pombal.</p>
+							<ul class="boxy-list">
+								<li class="entry">
+									<h3>Location</h3>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Rua Duque de Palmela, 34<br />
+											1250-098 Lisbon, Portugal
+										</dd>
+										<dt>Map</dt>
+										<dd class="flex-frame">
+											<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=hotel+florida,+lisboa&amp;aq=&amp;sll=38.719049,-9.143941&amp;sspn=0.006454,0.016383&amp;ie=UTF8&amp;hq=hotel+florida,&amp;hnear=Lisbon,+Portugal&amp;t=m&amp;ll=38.724325,-9.150131&amp;spn=0.008035,0.013733&amp;z=16&amp;output=embed"></iframe>
+										</dd>
+									</dl>
+								</li>
+								<li class="entry">
+									<h3>Details</h3>
+									<dl>
+										<dt>Distance</dt>
+										<dd>5 minute walk to venue</dd>
+										<dt>Website</dt>
+										<dd><a target="_blank" href="http://hotel-florida.pt" title="Visit Hotel Florida website">hotel-florida.pt</a></dd>
+										<dt>Email</dt>
+										<dd><a href="mailto:hello@hotel-florida.pt" title="Send email">hello@hotel-florida.pt</a></dd>
+										<dt>Rate</dt>
+										<dd>Single or Double Room, Breakfast and VAT included: from €90 (subject to availability)</dd>
+										<dt>Booking</dt>
+										<dd class="alt">Email: <a href="mailto:fo.manager@hotel-florida.pt">fo.manager@hotel-florida.pt</a></dd>
+										<dd>Phone: <a href="tel:00351213576145" title="Make a call">+351 213 576 145</a></dd>
+									</dl>
+								</li>
+							</ul>
+							<hr />
+							<h2>Other hotels nearby</h2>
+							<ul class="boxy-list">
+								<li class="entry">
+									<h3>Clarion Suites Lisboa <small class="extra">&#10029;&#10029;&#10029;&#10029;</small></h3>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Rua Rodrigo da Fonseca, 44-50<br />
+											1250-193 Lisbon, Portugal<br />
+											<a class="cta-inline" href="http://goo.gl/maps/Xwttr" title="View map" target="_blank">View map</a>
+										</dd>
+										<dt>Distance</dt>
+										<dd>10 minute walk to venue</dd>
+										<dt>Website</dt>
+										<dd><a target="_blank" href="http://clarionhotel.com/hotel-lisbon-portugal-PT023" title="Visit Clarion Suites Lisboa website">clarionhotel.com</a></dd>
+										<dt>Rate</dt>
+										<dd>From €82 pp/pn (subject to availability)</dd>
+										<dt>Booking</dt>
+										<dd class="alt">Email: <a href="mailto:clarion.suites@grupo-continental.com">clarion.suites@grupo-continental.com</a></dd>
+										<dd>Phone: <a href="tel:00351210046600" title="Make a call">+351 210 046 600</a></dd>
+									</dl>
+								</li
+								<li class="entry">
+									<h3>The Fontecruz <small class="extra">&#10029;&#10029;&#10029;&#10029;&#10029;</small></h3>
+									<dl>
+										<dt>Address</dt>
+										<dd>
+											Avenida da Liberdade, 138-142<br />
+											1150-001 Lisbon, Portugal<br />
+											<a class="cta-inline" href="http://goo.gl/maps/p4Qhq" title="View map" target="_blank">View map</a>
+										</dd>
+										<dt>Distance</dt>
+										<dd>1 minute walk to venue</dd>
+										<dt>Website</dt>
+										<dd><a target="_blank" href="http://www.fontecruzhoteles.com/hotel-fontecruz-lisboa/" title="Visit The Fontecruz website">fontecruzhoteles.com</a></dd>
+										<dt>Rate</dt>
+										<dd>From €148 pp/pn (subject to availability)</dd>
+										<dt>Booking</dt>
+										<dd class="alt">Email: <a href="mailto:ssantos@fontecruzlisboa.com">ssantos@fontecruzlisboa.com</a></dd>
+										<dd>Phone: <a href="tel:00351210410000" title="Make a call">+351 210 410 000</a></dd>
+									</dl>
+								</li
+							</ul>
+						</div>
+					
+					</div>
+				</section>
+				<!--/ accomodation -->
 			
+				<!-- significant other -->
+				<section class="mod section-block" id="significant-other">
+					<header class="mod-head">
+						<div class="inner">
+							<h1 class="mod-prime-title">Significant Other Track</h1>
+						</div>
+					</header>	
+					
+					<div class="mod-body entry">				
+						<div class="entry-prose">
+							<p><a href="http://www.osiris.pt/" title="Visit Osiris website" target="_blank">Osiris</a>, our partner Travel Agency, prepared a one-day tour of Lisbon and its surroundings for your husband/wife, boyfriend/girlfriend, pet or teletubbie doll (we do not discriminate).</p>
+							<h2>Tour itinerary</h2>
+							<ul class="boxy-list">
+								<li class="entry">
+									<h3>Morning Tour in Lisboa</h3>
+									<p>A tour to discover the city, promenading in one of the typical old quarters of <strong>Lisbon</strong>, <a href="https://www.google.pt/search?q=alfama&tbm=isch" title="Images of Alfama" target="_blank">Alfama</a>, walking through its narrow streets with arab influences. Then, visit of the <a href="http://en.museudoscoches.pt/" title="Visit the Royal Coach Museum website" target="_blank">Royal Coach Museum</a> where one can find the world’s largest collection of Royal Coaches), the <a href="http://en.wikipedia.org/wiki/Jer%C3%B3nimos_Monastery" title="Wikipedia entry on the Jerónimos Monastery" target="_blank">Jerónimos Monastery</a> and the <a href="https://www.google.pt/search?q=torre+de+belém&tbm=isch" title="Images of the Belém Tower" target="_blank">Belém Tower</a>, both good examples of the 16th century’s Manueline style (gothic) and finally the <a href="http://en.wikipedia.org/wiki/Padr%C3%A3o_dos_Descobrimentos" title="Wikipedia entry on the Monument" target="_blank">Monument to the Discoveries</a>. Continuing towards Sintra, free time for lunch</p>
+								</li>
+								<li class="entry">
+									<h3>Sintra /Cascais / Estoril</h3>
+									<p>Visit the medieval village of <strong>Sintra</strong>, former royal residence and chosen to inspire writers and poets, such as Lord Byron who named it “The Garden of Eden”. Visit of the <a href="http://en.wikipedia.org/wiki/Sintra_National_Palace" title="Visit the Wikipedia entry on the Palace" target="_blank">National Palace “da Villa”</a>, that houses a beautiful collection of glazed tiles, proceeding to the beaches of <a href="https://www.google.pt/search?q=guincho&tbm=isch" title="Images of the Guincho beach" target="_blank">Guincho</a>, <strong>Cascais</strong> and <strong>Estoril</strong> - renamed seaside resorts, returning to Lisbon along the coast.</p>
+								</li>
+							</ul>
+							<hr />
+							<h2>Book the Tour</h2>
+							<p>Contact <strong>Teresa Castanho</strong> at <a href="mailto:teresacastanho@osiris.pt" title="Send an email to Teresa Castanho">teresacastanho@osiris.pt</a> with the subject <strong>[LXJS] Significant Other Track</strong>.</p>
+						</div>
+					</div>
+				</section>
+				<!--/ travel -->
+
 			</section>
 			<!--/ site-body -->
 			

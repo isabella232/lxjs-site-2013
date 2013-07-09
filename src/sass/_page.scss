@@ -62,6 +62,7 @@
 		font-size: 16px;
 		color: $primary-color;
 		margin-left: 4px;
+		vertical-align: middle;
 	}
 }
 
@@ -448,21 +449,44 @@ h1, h2, h3, h4, h5, h6 {
 			padding-bottom: 0;
 		}
 	}
+	&.section-block {
+		display: none;
+		margin-bottom: 80px;
+		border-bottom: 0;
+		&.active-section {
+			display: block;
+		}
+		&:after {
+			display: none;
+		}
+		.mod-head {
+			@extend .visually-hidden;
+		}
+		.mod-body {
+			padding-bottom: 0;
+		}
+	}
 }
 
 #sponsors {
+	.mod-body {
+		text-align: center;
+		padding-left: 15px;
+	}
+	.logo-list {
+		float: left;
+		margin: 0;
+	}
+	.logo-wrapper {
+		float: left;
+		max-width: 140px;
+		margin: 0 10px 10px 0;
+	}
 	section {
-		margin-bottom: 20px;
-		&.synchronous {
-			@include grid-column($columns: 6);
-		}
-		&.co-organizer {
-			@include grid-column($columns: 6);
-		}
-		&.official-hotel {
-			@include grid-column($columns: 6);
-		}
+		display: inline-block;
+		margin: 0 0 10px -3px;
 		> h1 {
+			text-align: left;
 			font-size: emCalc(14px);
 			color: tint($base-color, 30%);
 			font-weight: inherit;
@@ -611,6 +635,7 @@ h1, h2, h3, h4, h5, h6 {
 		text-align: center;
 	}
 	.ticket-data {
+		margin-bottom: 20px;
 		dt {
 			@extend .visually-hidden;
 		}
@@ -634,11 +659,13 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: emCalc(32px);
 		font-weight: $body-font-bold;
 		line-height: 1.2;
+		margin-bottom: 0;
 	}
 	.ticket-foot {
 		padding: 25px 25px 15px 25px;
 		background: tint($primary-color, 85%);
-		margin: 0 -25px -25px -25px;
+		margin: 30px -25px -25px -25px;
+		font-size: emCalc(18px);
 		span {
 			font-weight: $body-font-bold;
 			&:before {
@@ -752,20 +779,46 @@ h1, h2, h3, h4, h5, h6 {
 		> *:last-child {
 			margin-bottom: 0;
 		}
+		hr {
+			border-width: 4px 0 0;
+			border-color: tint($base-color, 85%);
+			@include border-radius(2px);
+			margin: 30px 0;
+		}
+		.extra {
+			display: block;
+			color: tint($base-color, 50%);
+			line-height: inherit;
+		}
 	}
 	> .mod-body {
 		padding-bottom: 0;
 	}
-	h2, h3, h4 {
+	h2 {
 		&:after {
 			content: '';
 			display: block;
 			height: 4px;
 			background-color: $base-color;
-			width: 40px;
-			margin: 5px 0 15px;
+			width: 60px;
+			margin: 5px 0 25px;
 			@include border-radius(2px);
 		}
+	}
+	.flex-frame {
+		@include flex-video-container;
+	}
+	dd.alt {
+		margin: 0;
+	}
+}
+
+.boxy-list {
+	@include grid-row($behavior: nest);
+	list-style: none;
+	padding: 0;
+	.entry {
+		@include grid-column($columns: 12);
 	}
 }
 
@@ -927,10 +980,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider {
 	@include grid-column($columns: 12);
+	margin: 0 0 30px 0;
 	.orbit-container {
 		margin: 0;
 		width: auto !important;
-		background: none;
+		background: $base-color;
+		@include border-radius(4px);
 		.orbit-timer > span {
 			display: none;
 		}
