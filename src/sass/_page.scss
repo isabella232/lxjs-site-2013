@@ -697,7 +697,7 @@ h1, h2, h3, h4, h5, h6 {
 	&.illu:before {
 		@extend .icon;
 		font-size: 50px;
-		color: red;
+		color: #FFF;
 		position: absolute;
 		top: 50%;
 		left: 0;
@@ -763,6 +763,16 @@ h1, h2, h3, h4, h5, h6 {
 				margin-right: 4px;
 				vertical-align: middle;
 				color: tint($primary-color, 50%);
+			}
+		}
+	}
+}
+
+#sections-featured {
+	.entry-list {
+		&.sections {
+			> li {
+				@include grid-column($columns: 6);
 			}
 		}
 	}

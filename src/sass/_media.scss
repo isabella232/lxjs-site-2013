@@ -74,6 +74,16 @@
 
 @media #{$medium} {
 	
+	#sections-featured {
+		.entry-list {
+			&.sections {
+				> li {
+					@include grid-column($columns: 3);
+				}
+			}
+		}
+	}
+
 	#brand-logo {
 		font-size: 0;
 	}
