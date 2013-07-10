@@ -1,5 +1,13 @@
 @media #{$small} {
 	
+	.entry-cover-wrapper {
+		&.illu:before {
+			@extend .icon;
+			font-size: 80px;
+			margin: -40px 0 0 0;
+		}
+	}
+	
 	.entry {
 		.entry-prose {
 			.entry-cover-wrapper {
@@ -66,6 +74,16 @@
 
 @media #{$medium} {
 	
+	#sections-featured {
+		.entry-list {
+			&.sections {
+				> li {
+					@include grid-column($columns: 3);
+				}
+			}
+		}
+	}
+
 	#brand-logo {
 		font-size: 0;
 	}
