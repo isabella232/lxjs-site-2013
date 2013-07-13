@@ -696,12 +696,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	&.illu:before {
 		@extend .icon;
-		font-size: 80px;
-		color: #fff;
+		font-size: 50px;
+		color: #FFF;
 		position: absolute;
 		top: 50%;
 		left: 0;
-		margin: -40px 0 0 0;
+		margin: -25px 0 0 0;
 		z-index: 10;
 		width: 100%;
 		text-align: center;
@@ -763,6 +763,16 @@ h1, h2, h3, h4, h5, h6 {
 				margin-right: 4px;
 				vertical-align: middle;
 				color: tint($primary-color, 50%);
+			}
+		}
+	}
+}
+
+#sections-featured {
+	.entry-list {
+		&.sections {
+			> li {
+				@include grid-column($columns: 6);
 			}
 		}
 	}
