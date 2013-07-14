@@ -76,7 +76,8 @@ module.exports = function(grunt) {
         "public/speakers/tim-park.html": "src/speakers/tim-park.html",
         "public/speakers/james-halliday.html": "src/speakers/james-halliday.html",
         "public/speakers/thorsten-lorenz.html": "src/speakers/thorsten-lorenz.html",
-        "public/speakers/andre-cruz.html": "src/speakers/andre-cruz.html"
+        "public/speakers/andre-cruz.html": "src/speakers/andre-cruz.html",
+        "public/speakers/rod-vagg.html": "src/speakers/rod-vagg.html"
   			}
   		},
 
@@ -122,7 +123,8 @@ module.exports = function(grunt) {
         "public/speakers/tim-park.html": "src/speakers/tim-park.html",
         "public/speakers/james-halliday.html": "src/speakers/james-halliday.html",
         "public/speakers/thorsten-lorenz.html": "src/speakers/thorsten-lorenz.html",
-        "public/speakers/andre-cruz.html": "src/speakers/andre-cruz.html"
+        "public/speakers/andre-cruz.html": "src/speakers/andre-cruz.html",
+        "public/speakers/rod-vagg.html": "src/speakers/rod-vagg.html"
 			}
   		}
   	},
