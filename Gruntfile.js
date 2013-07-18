@@ -79,7 +79,8 @@ module.exports = function(grunt) {
         "public/speakers/andre-cruz.html": "src/speakers/andre-cruz.html",
         "public/speakers/rod-vagg.html": "src/speakers/rod-vagg.html",
         "public/speakers/alex-feyerke.html": "src/speakers/alex-feyerke.html",
-        "public/speakers/aral-balkan.html": "src/speakers/aral-balkan.html"
+        "public/speakers/aral-balkan.html": "src/speakers/aral-balkan.html",
+        "public/speakers/adam-brault.html": "src/speakers/adam-brault.html"
   			}
   		},
 
@@ -128,7 +129,8 @@ module.exports = function(grunt) {
         "public/speakers/andre-cruz.html": "src/speakers/andre-cruz.html",
         "public/speakers/rod-vagg.html": "src/speakers/rod-vagg.html",
         "public/speakers/alex-feyerke.html": "src/speakers/alex-feyerke.html",
-        "public/speakers/aral-balkan.html": "src/speakers/aral-balkan.html"
+        "public/speakers/aral-balkan.html": "src/speakers/aral-balkan.html",
+        "public/speakers/adam-brault.html": "src/speakers/adam-brault.html"
 			}
   		}
   	},
