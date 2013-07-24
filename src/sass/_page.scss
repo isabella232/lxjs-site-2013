@@ -66,6 +66,28 @@
 	}
 }
 
+.cta-sticker {
+	display: block;
+	background: $base-color;
+	color: #FFF;
+	@include border-radius(50%);
+	@include box-shadow(2px 4px 0 0 rgba($base-color, 0.2));
+	@include rotate(10deg);
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	line-height: 100%;
+	font-size: emCalc(14px);
+	small {
+		color: tint($base-color, 50%);
+		display: block;
+		font-size: inherit;
+	}
+}
+
 .inner {
 	@include grid-row();
 }
@@ -429,6 +451,15 @@ h1, h2, h3, h4, h5, h6 {
 					margin: 5px auto 15px auto;
 					@include border-radius(2px);
 				}
+			}
+		}
+		.cta-about {
+			position: relative;
+			strong {
+				position: absolute;
+				top: 20px;
+				right: 15px;
+				z-index: 20;
 			}
 		}
 	}
@@ -1074,4 +1105,25 @@ h1, h2, h3, h4, h5, h6 {
 	    @include box-shadow(0 0 0 5px rgba($base-color, 0.1));
 	    @include border-radius(2px);
     }
+}
+
+#highlights {
+	@include grid-row();
+	margin-bottom: 60px;
+	.highlights-body {
+		@include grid-column($columns: 12);
+	}
+	strong {
+		text-transform: uppercase;
+	}
+	.highlights-box {
+		text-align: center;
+		border: 10px dashed tint($base-color, 85%);
+		padding: 30px;
+		font-size: emCalc(24px);
+		@include border-radius(16px);			
+		p {
+			margin-bottom: 0;
+		}
+	}
 }
