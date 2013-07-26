@@ -80,7 +80,8 @@ module.exports = function(grunt) {
         "public/speakers/rod-vagg.html": "src/speakers/rod-vagg.html",
         "public/speakers/alex-feyerke.html": "src/speakers/alex-feyerke.html",
         "public/speakers/aral-balkan.html": "src/speakers/aral-balkan.html",
-        "public/speakers/adam-brault.html": "src/speakers/adam-brault.html"
+        "public/speakers/adam-brault.html": "src/speakers/adam-brault.html",
+        "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html"
   			}
   		},
 
@@ -130,7 +131,8 @@ module.exports = function(grunt) {
         "public/speakers/rod-vagg.html": "src/speakers/rod-vagg.html",
         "public/speakers/alex-feyerke.html": "src/speakers/alex-feyerke.html",
         "public/speakers/aral-balkan.html": "src/speakers/aral-balkan.html",
-        "public/speakers/adam-brault.html": "src/speakers/adam-brault.html"
+        "public/speakers/adam-brault.html": "src/speakers/adam-brault.html",
+        "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html"
 			}
   		}
   	},
