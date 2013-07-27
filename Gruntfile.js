@@ -81,7 +81,8 @@ module.exports = function(grunt) {
         "public/speakers/alex-feyerke.html": "src/speakers/alex-feyerke.html",
         "public/speakers/aral-balkan.html": "src/speakers/aral-balkan.html",
         "public/speakers/adam-brault.html": "src/speakers/adam-brault.html",
-        "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html"
+        "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html",
+        "public/speakers/hannah-wolfe.html": "src/speakers/hannah-wolfe.html"
   			}
   		},
 
@@ -132,7 +133,8 @@ module.exports = function(grunt) {
         "public/speakers/alex-feyerke.html": "src/speakers/alex-feyerke.html",
         "public/speakers/aral-balkan.html": "src/speakers/aral-balkan.html",
         "public/speakers/adam-brault.html": "src/speakers/adam-brault.html",
-        "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html"
+        "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html",
+        "public/speakers/hannah-wolfe.html": "src/speakers/hannah-wolfe.html"
 			}
   		}
   	},
