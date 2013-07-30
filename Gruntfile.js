@@ -83,7 +83,8 @@ module.exports = function(grunt) {
         "public/speakers/adam-brault.html": "src/speakers/adam-brault.html",
         "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html",
         "public/speakers/hannah-wolfe.html": "src/speakers/hannah-wolfe.html",
-        "public/speakers/martin-naumann.html": "src/speakers/martin-naumann.html"
+        "public/speakers/martin-naumann.html": "src/speakers/martin-naumann.html",
+        "public/speakers/dominic-tarr.html": "src/speakers/dominic-tarr.html"
   			}
   		},
 
@@ -136,7 +137,8 @@ module.exports = function(grunt) {
         "public/speakers/adam-brault.html": "src/speakers/adam-brault.html",
         "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html",
         "public/speakers/hannah-wolfe.html": "src/speakers/hannah-wolfe.html",
-        "public/speakers/martin-naumann.html": "src/speakers/martin-naumann.html"
+        "public/speakers/martin-naumann.html": "src/speakers/martin-naumann.html",
+        "public/speakers/dominic-tarr.html": "src/speakers/dominic-tarr.html"
 			}
   		}
   	},
