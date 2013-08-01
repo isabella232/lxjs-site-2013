@@ -84,7 +84,8 @@ module.exports = function(grunt) {
         "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html",
         "public/speakers/hannah-wolfe.html": "src/speakers/hannah-wolfe.html",
         "public/speakers/martin-naumann.html": "src/speakers/martin-naumann.html",
-        "public/speakers/dominic-tarr.html": "src/speakers/dominic-tarr.html"
+        "public/speakers/dominic-tarr.html": "src/speakers/dominic-tarr.html",
+        "public/speakers/tancredi-trugenberger.html": "src/speakers/tancredi-trugenberger.html"
   			}
   		},
 
@@ -138,7 +139,8 @@ module.exports = function(grunt) {
         "public/speakers/marco-oliveira.html": "src/speakers/marco-oliveira.html",
         "public/speakers/hannah-wolfe.html": "src/speakers/hannah-wolfe.html",
         "public/speakers/martin-naumann.html": "src/speakers/martin-naumann.html",
-        "public/speakers/dominic-tarr.html": "src/speakers/dominic-tarr.html"
+        "public/speakers/dominic-tarr.html": "src/speakers/dominic-tarr.html",
+        "public/speakers/tancredi-trugenberger.html": "src/speakers/tancredi-trugenberger.html"
 			}
   		}
   	},
