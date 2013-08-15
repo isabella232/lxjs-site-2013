@@ -501,11 +501,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #sponsors {
 	.mod-body {
-		text-align: center;
-		padding-left: 15px;
+		padding-left: 20px;
+		max-width: 620px;
 	}
 	.logo-list {
-		float: left;
 		margin: 0;
 	}
 	.logo-wrapper {
@@ -514,10 +513,9 @@ h1, h2, h3, h4, h5, h6 {
 		margin: 0 10px 10px 0;
 	}
 	section {
-		display: inline-block;
+		display: block;
 		margin: 0 0 10px -3px;
 		> h1 {
-			text-align: left;
 			font-size: emCalc(14px);
 			color: tint($base-color, 30%);
 			font-weight: inherit;
@@ -530,6 +528,21 @@ h1, h2, h3, h4, h5, h6 {
 				width: 40px;
 				margin: 5px 0 15px;
 				@include border-radius(1px);
+			}
+		}
+		&.partners, 
+		&.official-hotel,
+		&.co-organizer {
+			float: left;
+		}
+		&.asynchronous {
+			.logo-list a {
+				border-color: tint($base-color, 0%);
+			}
+		}
+		&.synchronous {
+			.logo-list a {
+				border-color: tint($base-color, 50%);
 			}
 		}
 	}
@@ -550,6 +563,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	
 }
+
 
 .contacts-list {
 	margin: 0;
