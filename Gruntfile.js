@@ -88,7 +88,8 @@ module.exports = function(grunt) {
           "public/speakers/tancredi-trugenberger.html": "src/speakers/tancredi-trugenberger.html",
           "public/speakers/caolan-mcmahon.html": "src/speakers/caolan-mcmahon.html",
           "public/speakers/peter-johnson.html": "src/speakers/peter-johnson.html",
-          "public/speakers/chris-bumgardner.html": "src/speakers/chris-bumgardner.html"
+          "public/speakers/chris-bumgardner.html": "src/speakers/chris-bumgardner.html",
+          "public/speakers/bert-belder.html": "src/speakers/bert-belder.html"
         }
       },
 
@@ -146,7 +147,8 @@ module.exports = function(grunt) {
          "public/speakers/tancredi-trugenberger.html": "src/speakers/tancredi-trugenberger.html",
          "public/speakers/caolan-mcmahon.html": "src/speakers/caolan-mcmahon.html",
          "public/speakers/peter-johnson.html": "src/speakers/peter-johnson.html",
-         "public/speakers/chris-bumgardner.html": "src/speakers/chris-bumgardner.html"
+         "public/speakers/chris-bumgardner.html": "src/speakers/chris-bumgardner.html",
+          "public/speakers/bert-belder.html": "src/speakers/bert-belder.html"
        }
      }
    },
