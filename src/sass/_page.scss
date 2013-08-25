@@ -50,6 +50,16 @@
 			color: tint($base-color, 50%);
 		}
 	}
+  &.small {
+    min-width: 160px;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 25px;
+    font-size: emCalc(20px);
+    span:after {
+      font-size: 20px;
+    }
+  }
 }
 
 .cta-inline {
