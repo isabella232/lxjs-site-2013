@@ -5,25 +5,244 @@
 				<header class="mod-head">
 					<div class="inner">
 						<h1 class="mod-prime-title">Workshops</h1>
-						<p class="mod-description">Schedule and final info coming soon.</p>
+						<p class="mod-description">Come learn with the best</p>
+						<div class="wrapper">
+							<a href="#sec-nav" title="Show submenu" class="toggle-submenu"><span>Workshops</span></a>
+							<nav id="sec-nav" role="navigation">
+								<ul>
+									<li class="current-item"><a href="#workshops" title="Workshops">Workshops</a></li>
+									<li><a href="#docker" title="Docker.io">Docker.io</a></li>
+									<li><a href="#appium" title="Appium">Appium</a></li>
+								</ul>
+							</nav>
+						</div>
 					</div>
 				</header>
+	
 
-				<div class="mod-body entry">				
-					<div class="entry-prose">
+				<section class="mod section-block active-section" id="workshops">
+					<header class="mod-head">
+						<div class="inner">
+							<h1 class="mod-prime-title">Workshops</h1>
+						</div>
+					</header>
+	
+          <div class="mod-body entry">
+            <div class="entry-prose">
 
-						<p>We've been gathering the best trainers to help you craft your dev skills, this year (so far) we have workshops of:</p>
+              <p>We've been gathering the best trainers to help you craft your dev skills, this year we will have the following workshops:</p>
 
-						<ul>
-							<li><a href="http://nodejs.org/" target="_blank">node.js</a></li>
-							<li><a href="http://appium.io/" target="_blank">Appium</a></li>
-							<li><a href="http://meteor.com/" target="_blank">Meteor</a></li>
-						</ul>
+              <ul>
+                <li><a href="http://nodejs.org/" target="_blank">node.js</a></li>
+                <li><a href="http://appium.io/" target="_blank">Appium</a></li>
+                <li><a href="http://meteor.com/" target="_blank">Meteor</a></li>
+                <li><a href="http://docker.io/" target="_blank">Docker.io</a></li>
+              </ul>
 
-						<p>As usual they will happen 2-3 days before the conference, stay tuned for more updates at <a href="http://twitter.com/lxjs" target="_blank">@lxjs</a></p>
+              <p>With more to come</p>
 
-					</div>
-				</div>
+              <p>As usual they will happen 2-3 days before the conference. Time and location will be disclosed to workshop attendees closer to the conference.</p>
+
+              <p>Stay tuned for more updates at <a href="http://twitter.com/lxjs" target="_blank">@lxjs</a></p>
+
+            </div>
+          </div>
+        </section>
+
+
+
+				<section class="mod section-block" id="docker">
+					<header class="mod-head">
+						<div class="inner">
+							<h1 class="mod-prime-title">Docker.io</h1>
+						</div>
+					</header>
+	
+          <div class="mod-body entry">
+            <div class="entry-prose">
+							<h2>Building a baby PaaS with Vagrant, Docker.io and Node.js</h2>
+
+              <h3>Abstract</h3>
+
+              <p>In this workshop you will build a baby PaaS from scratch. Starting with your development environment using Vagrant and ending with some Docker.io and Node.js magic.</p>
+              <p>When you are building a project that needs development time and constant care across all stack, for example devops tools or PaaS related software, the complexity of your development environment will quickly increase.</p>
+              <p>You will learn how to use Vagrant in order to leverage this task saving you precious time. Using this new development environment you will fiddle with Docker.io using Node.js while building a step­by­step basic PaaS using containers running on top of a Vagrant Virtual Machine. With your new ninja Docker skills, you will develop all container logic and control using Docker’s Remote API, implement container abstraction, scalable workers and balancer.</p>
+
+              <h3>Profits</h3>
+
+              <p>This workshop will be helping <a href="http://nodecopter.com/2013/lisbon/oct-4">Nodecopter LX</a> by donating it's profits so the organizers can make the event happen!</p>
+
+              <hr />
+
+              <ul class="boxy-list">
+                <li class="entry">
+
+                  <h3>Topics</h3>
+
+                  <ul>
+                    <li>Vagrant configuration
+                      <ul>
+                        <li>Port forwarding</li>
+                        <li>Shared Folders</li>
+                        <li>VirtualBox provider</li>
+                        <li>Network setup</li>
+                        <li>Custom settings</li>
+                      </ul>
+                    </li>
+                    <li>Docker on Vagrant (dev environment)</li>
+                    <li>Docker
+                      <ul>
+                        <li>Command line</li>
+                        <li>Containers
+                          <ul>
+                            <li>Diffs, networking, resources limits, image index</li>
+                          </ul>
+                        </li>
+                        <li>Remote API
+                          <ul>
+                            <li>node.js Docker modules (mindset for Container abstraction)</li>
+                            <li>Container lifecycle (mindset for Execution control)</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>Building a baby PaaS using your new skills and dev environment
+                      <ul>
+                        <li>Docker images</li>
+                        <li>Container abstraction</li>
+                        <li>Execution Control</li>
+                        <li>Scalable workers</li>
+                        <li>Load balancer</li>
+                        <li>Deployment (via github)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="entry">
+                  <h3>Pre-requisites</h3>
+
+                  <ul>
+                    <li>Virtual Box 4.2.16 (supplied)</li>
+                    <li>Vagrant 1.2.7 (supplied)</li>
+                    <li>Base box for Vagrant (supplied)</li>
+                    <li>Docker images (supplied)</li>
+                    <li>Git</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <hr />
+
+              <h3>Trainers</h3>
+
+              <ul class="boxy-list">
+                <li class="entry">
+                  <h4>Daniel Gomes</h4>
+
+                  <!--
+                  <figure class="entry-cover-wrapper">
+                    <img src="../img/thumb-speaker-jonathan-lipps.jpg" alt="Photo of Jonathan Lipps" width="300" height="300" />
+                  </figure>
+                  -->
+
+                  <p>Daniel Gomes loves to solve problems through code and help communities to grow up. He’s also an open source evangelist and currently works as a senior software engineer at GuestCentric Systems.</p>
+                  <p>He started working with open source technologies at the age of eighteen. Since than he knows what is his passion. He is an active open source contributor and loves to help communities, thats why he co-founded <a href="http://phplx.net/">phplx</a> an user group based in Lisbon area and always tries to help other local communities.</p>
+                  <p>He has worked with several technologies but lately he is working with PHP, Javascript, NoSQL and MySQL. He loves to build robust and scalable web applications with focus on performance.</p>
+                  <p>You can follow his blog at <a href="http://danielcsgomes.com">danielcsgomes.com</a> or on Twitter at <a href="http://twitter.com/danielcsgomes">@danielcsgomes</a>.</p>
+                </li>
+                <li class="entry">
+                  <h4>Pedro Dias</h4>
+
+                  <!--
+                  <figure class="entry-cover-wrapper">
+                    <img src="../img/thumb-speaker-jonathan-lipps.jpg" alt="Photo of Jonathan Lipps" width="300" height="300" />
+                  </figure>
+                  -->
+
+                  <p>Proud generalist, JS lover and automation freak. He's also a recent father so he didn't have time to write a proper bio (you should send him congrats on <a href="http://twitter.com/pedromdias">twitter</a>).</p>
+              </ul>
+
+              <h3>Date</h3>
+
+              <p>29th September (afternoon)</p>
+
+              <h3>Price and tickets</h3>
+
+              <p>Price: €50 + VAT</p>
+
+              <div class="ticket-body">
+                <p><a href="https://tito.io/lxjs-2013/lxjs-2013?release_id=5bxbrqyyx0o" class="cta-bttn go small" title="Buy ticket"><span>Buy</span></a></p>
+              </div>
+
+
+            </div>
+          </div>
+        </section>
+
+				<section class="mod section-block" id="appium">
+					<header class="mod-head">
+						<div class="inner">
+							<h1 class="mod-prime-title">Appium</h1>
+						</div>
+					</header>
+	
+          <div class="mod-body entry">
+            <div class="entry-prose">
+							<h2>Appium: Get your hands on some Node-powered mobile automation!</h2>
+
+              <h3>Abstract</h3>
+
+              <p>In this workshop we will get practical with Appium. Participants will learn how to `npm install` and run the server, and how to write simple test cases for iOS and Android apps. We'll discuss Appium's test model, and how to access it using Wd.js (callbacks) or Yiewd (generators). We'll explore advanced mobile automation behaviors like swipes and finding elements by their hierarchy in the UI. Participants will walk away being able to automate their mobile apps in Javascript. It's about time automation came to mobile!</p>
+
+              <hr />
+
+              <h3>Topics</h3>
+
+              <ul>
+                <li>Appium Introduction</li>
+                <li>Mobile app SDK setup</li>
+                <li>Appium's test model</li>
+                <li>Tour of Javascript WebDriver bindings</li>
+                <li>Automating iOS apps</li>
+                <li>Automating Android apps</li>
+                <li>Writing cross-platform tests</li>
+              </ul>
+
+              <hr />
+
+              <h3>Trainer</h3>
+
+              <h4>Jonathan Lipps</h4>
+
+              <figure class="entry-cover-wrapper">
+                <img src="../img/thumb-speaker-jonathan-lipps.jpg" alt="Photo of Jonathan Lipps" width="300" height="300" />
+              </figure>
+
+              <p>Jonathan Lipps has been making things out of code as long as he can remember. He currently works as a Senior Software Developer for Sauce Labs, which enables him to write code for various open-source projects, like Appium (the Node.js-based mobile automation framework for which he's the primary architect and lead developer).</p>
+              <p>Jonathan has worked as a programmer in the startup world on and off for over a decade, and given talks on software development at conferences around the world, but is also passionate about academic discussion.</p>
+              <p>Jonathan has master's degrees in philosophy and linguistics, from Stanford and Oxford respectively. Living in San Francisco, he's an avid homebrewer, rock climber, and writer on topics he considers vital, like the relationship of technology to what it means to be human.</p>
+
+              <h3>Date</h3>
+
+              <p>1st October (afternoon)</p>
+
+              <h3>Price and tickets</h3>
+
+              <p>Price: €30 + VAT</p>
+
+
+              <div class="ticket-body">
+                <p><a href="https://tito.io/lxjs-2013/lxjs-2013?release_id=ujlwsxx-1xo" class="cta-bttn go small" title="Buy ticket"><span>Buy</span></a></p>
+              </div>
+
+
+
+            </div>
+          </div>
+        </section>
+
+
+
 			
 			</section>
 			<!--/ site-body -->
