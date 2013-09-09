@@ -1155,31 +1155,44 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-.scheduled {
-	position: relative;
-	padding-top: 40px;
-	@include grid-row();
+.schedule {
+	@include grid-row($behavior: nest);
+	list-style: none;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 	.head {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 33.33333%;
-	}
-	.body {
-		
-	}
-	&.col2x {
-	}
-	&.col3x {
-		.head:nth-of-type(2) {
-			left: (100%/3);
-		}
-		.head:nth-of-type(3) {
-			left: (100%/3)*2;
-		}
-		.body {
-			@include grid-column($columns: 4);
+		text-transform: uppercase;
+		font-size: emCalc(24px);
+		sup {
+			top: -0.22em;
 		}
 	}
-	
+	.day {
+		margin-bottom: 20px;
+		strong {
+			font-size: emCalc(24px);
+			display: block;
+		}
+		small {
+			display: block;
+			text-transform: uppercase;
+			font-size: emCalc(14px);
+			color: tint($base-color, 30%);
+			line-height: 1.2;
+			margin-top: -4px;
+		}
+		li {
+			margin-bottom: 20px;
+			padding: 0 0 20px 0;
+			border-bottom: 4px solid tint($base-color, 85%);
+		}
+	}
+	&.workshops {
+		.day {
+			@include grid-column($columns: 12);
+		}
+	}
 }
