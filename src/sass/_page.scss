@@ -1154,3 +1154,32 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 }
+
+.scheduled {
+	position: relative;
+	padding-top: 40px;
+	@include grid-row();
+	.head {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 33.33333%;
+	}
+	.body {
+		
+	}
+	&.col2x {
+	}
+	&.col3x {
+		.head:nth-of-type(2) {
+			left: (100%/3);
+		}
+		.head:nth-of-type(3) {
+			left: (100%/3)*2;
+		}
+		.body {
+			@include grid-column($columns: 4);
+		}
+	}
+	
+}
