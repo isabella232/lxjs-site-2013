@@ -41,6 +41,7 @@ module.exports = function(grunt) {
   			},
   			files: {
   				"public/about.html": "src/about.html",
+  				"public/meteor2lxjs.html": "src/meteor2lxjs.html",
   				"public/code-of-conduct.html": "src/code-of-conduct.html",
   				"public/conference.html": "src/conference.html",
   				"public/fringe.html": "src/fringe.html",
