@@ -1,5 +1,13 @@
 @media #{$small} {
 	
+	.schedule {
+		&.workshops {
+			.day {
+				@include grid-column($columns: 4);
+			}
+		}
+	}
+	
 	.entry-cover-wrapper {
 		&.illu:before {
 			/* @extend .icon; */

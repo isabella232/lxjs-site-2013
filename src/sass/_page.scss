@@ -745,6 +745,9 @@ h1, h2, h3, h4, h5, h6 {
 	@include border-radius(50%);
 	border: 10px solid tint($primary-color, 85%);
 	max-width: 220px;
+	&.workshop {
+		max-width: 180px;
+	}
 	img {
 		@include border-radius(50%);
 		display: block;
@@ -843,6 +846,9 @@ h1, h2, h3, h4, h5, h6 {
 			margin: 0 auto 20px auto;
 			clear: both;
 			display: block;
+			&.workshop {
+				float: right;
+			}
 		}
 		> *:last-child {
 			margin-bottom: 0;
@@ -1151,6 +1157,48 @@ h1, h2, h3, h4, h5, h6 {
 		@include border-radius(16px);			
 		p {
 			margin-bottom: 0;
+		}
+	}
+}
+
+.schedule {
+	@include grid-row($behavior: nest);
+	list-style: none;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.head {
+		text-transform: uppercase;
+		font-size: emCalc(24px);
+		sup {
+			top: -0.22em;
+		}
+	}
+	.day {
+		margin-bottom: 20px;
+		strong {
+			font-size: emCalc(24px);
+			display: block;
+		}
+		small {
+			display: block;
+			text-transform: uppercase;
+			font-size: emCalc(14px);
+			color: tint($base-color, 30%);
+			line-height: 1.2;
+			margin-top: -4px;
+		}
+		li {
+			margin-bottom: 20px;
+			padding: 0 0 20px 0;
+			border-bottom: 4px solid tint($base-color, 85%);
+		}
+	}
+	&.workshops {
+		.day {
+			@include grid-column($columns: 12);
 		}
 	}
 }
