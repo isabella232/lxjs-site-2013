@@ -3,7 +3,7 @@
 	.schedule {
 		&.workshops {
 			.day {
-				@include grid-column($columns: 4);
+				@include grid-column($columns: 3);
 			}
 		}
 	}
